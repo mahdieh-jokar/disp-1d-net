@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/
+
+# Downloaded dataset (see data/data.md) -- never commit the actual images/labels
+data/OrigImages0tm325/
+data/GroundTruth/
+data/*.tif
+data/*.txt
+
+# Local-only artifacts kept out of the published repo (see README.md / model/README.md)
+/model_scripted.pt
+/article-Jokar-Mahdieh1.pdf
+/theses.pdf
+/qnn-data/
+/GroundTruth/
+/GroundTruth.zip
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

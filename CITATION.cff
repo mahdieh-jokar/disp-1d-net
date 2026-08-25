@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article and/or thesis below."
+title: "Disp1DNet: 1D-CNN Stereo Disparity Estimation on FPGA"
+authors:
+  - family-names: Jokar
+    given-names: Mahdieh
+    affiliation: "School of Electrical and Computer Engineering, University of Tehran"
+preferred-citation:
+  type: article
+  title: "Disp1DNet: Rapid 1D Stereo Network for Efficient Disparity Map Estimation"
+  authors:
+    - family-names: Jokar
+      given-names: Mahdieh
+  url: "https://ieeexplore.ieee.org/document/10887522/"
+  publisher:
+    name: IEEE
+  year: 2024
+  # NOTE: volume/page/DOI intentionally left for the author to fill in. IEEE Xplore's
+  # page did not yield machine-readable metadata when this file was generated; see the
+  # IEEE Xplore link above for the authoritative record.

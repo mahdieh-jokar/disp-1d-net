@@ -1,0 +1,11 @@
+{
+  "vivado_proj_folder": "/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper",
+  "LUT": 848.0,
+  "FF": 1003.0,
+  "DSP": 0.0,
+  "BRAM": 0.0,
+  "WNS": 4.173,
+  "": 0,
+  "fmax_mhz": 171.6148961729878,
+  "estimated_throughput_fps": 2561416.360790863
+}

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Sep 18 13:06:44 2023
+# Process ID: 2947
+# Current directory: /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9
+# Command line: vivado -mode batch -source make_project.tcl
+# Log file: /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/vivado.log
+# Journal file: /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/vivado.jou
+#-----------------------------------------------------------
+source make_project.tcl

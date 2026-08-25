@@ -1,0 +1,237 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Sep 18 13:06:44 2023
+# Process ID: 2947
+# Current directory: /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9
+# Command line: vivado -mode batch -source make_project.tcl
+# Log file: /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/vivado.log
+# Journal file: /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/vivado.jou
+#-----------------------------------------------------------
+source make_project.tcl
+# create_project finn_vivado_stitch_proj /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9 -part xc7a200t
+# set_property ip_repo_paths [list /workspace/finn/finn-rtllib/memstream /tmp/finn_dev_jokar/code_gen_ipgen_StreamingFIFO_0_ob5dtyc4/project_StreamingFIFO_0/sol1/impl/verilog /tmp/finn_dev_jokar/code_gen_ipgen_FMPadding_Batch_0_en055bjd/project_FMPadding_Batch_0/sol1/impl/ip /tmp/finn_dev_jokar/code_gen_ipgen_ConvolutionInputGenerator1D_0_m5yr2c57/project_ConvolutionInputGenerator1D_0/sol1/impl/ip /tmp/finn_dev_jokar/code_gen_ipgen_StreamingFCLayer_Batch_0_r2l81l2y/project_StreamingFCLayer_Batch_0/sol1/impl/ip /tmp/finn_dev_jokar/code_gen_ipgen_FMPadding_Batch_1_vns69xzw/project_FMPadding_Batch_1/sol1/impl/ip /tmp/finn_dev_jokar/code_gen_ipgen_ConvolutionInputGenerator1D_1_9ail67l6/project_ConvolutionInputGenerator1D_1/sol1/impl/ip /tmp/finn_dev_jokar/code_gen_ipgen_StreamingFCLayer_Batch_1_jyi0q7y_/project_StreamingFCLayer_Batch_1/sol1/impl/ip /tmp/finn_dev_jokar/code_gen_ipgen_FMPadding_Batch_2_5w5u75bw/project_FMPadding_Batch_2/sol1/impl/ip /tmp/finn_dev_jokar/code_gen_ipgen_ConvolutionInputGenerator1D_2_abhj22xn/project_ConvolutionInputGenerator1D_2/sol1/impl/ip /tmp/finn_dev_jokar/code_gen_ipgen_StreamingFCLayer_Batch_2_aqd1y8fw/project_StreamingFCLayer_Batch_2/sol1/impl/ip /tmp/finn_dev_jokar/code_gen_ipgen_FMPadding_Batch_3_3dfii6cu/project_FMPadding_Batch_3/sol1/impl/ip /tmp/finn_dev_jokar/code_gen_ipgen_ConvolutionInputGenerator1D_3_4k0xkhzr/project_ConvolutionInputGenerator1D_3/sol1/impl/ip /tmp/finn_dev_jokar/code_gen_ipgen_StreamingFCLayer_Batch_3_lw7df92t/project_StreamingFCLayer_Batch_3/sol1/impl/ip] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/workspace/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_jokar/code_gen_ipgen_StreamingFIFO_0_ob5dtyc4/project_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_jokar/code_gen_ipgen_FMPadding_Batch_0_en055bjd/project_FMPadding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_jokar/code_gen_ipgen_ConvolutionInputGenerator1D_0_m5yr2c57/project_ConvolutionInputGenerator1D_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_jokar/code_gen_ipgen_StreamingFCLayer_Batch_0_r2l81l2y/project_StreamingFCLayer_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_jokar/code_gen_ipgen_FMPadding_Batch_1_vns69xzw/project_FMPadding_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_jokar/code_gen_ipgen_ConvolutionInputGenerator1D_1_9ail67l6/project_ConvolutionInputGenerator1D_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_jokar/code_gen_ipgen_StreamingFCLayer_Batch_1_jyi0q7y_/project_StreamingFCLayer_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_jokar/code_gen_ipgen_FMPadding_Batch_2_5w5u75bw/project_FMPadding_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_jokar/code_gen_ipgen_ConvolutionInputGenerator1D_2_abhj22xn/project_ConvolutionInputGenerator1D_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_jokar/code_gen_ipgen_StreamingFCLayer_Batch_2_aqd1y8fw/project_StreamingFCLayer_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_jokar/code_gen_ipgen_FMPadding_Batch_3_3dfii6cu/project_FMPadding_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_jokar/code_gen_ipgen_ConvolutionInputGenerator1D_3_4k0xkhzr/project_ConvolutionInputGenerator1D_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_jokar/code_gen_ipgen_StreamingFCLayer_Batch_3_lw7df92t/project_StreamingFCLayer_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/storage/shared/programs/xilinx/Vivado/2019.1/data/ip'.
+# create_bd_design "finn_design"
+Wrote  : </tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd> 
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingFIFO_0:1.0 StreamingFIFO_0
+# create_bd_cell -type ip -vlnv xilinx.com:hls:FMPadding_Batch_0:1.0 FMPadding_Batch_0
+# create_bd_cell -type ip -vlnv xilinx.com:hls:ConvolutionInputGenerator1D_0:1.0 ConvolutionInputGenerator1D_0
+WARNING: [BD 41-1753] The name 'ConvolutionInputGenerator1D_0' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type hier StreamingFCLayer_Batch_0
+# create_bd_pin -dir I -type clk /StreamingFCLayer_Batch_0/ap_clk
+# create_bd_pin -dir I -type rst /StreamingFCLayer_Batch_0/ap_rst_n
+# create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_0/out_V_V
+# create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_0/in0_V_V
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingFCLayer_Batch_0:1.0 /StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0
+# create_bd_cell -type ip -vlnv xilinx.com:user:memstream:1.0 /StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm
+WARNING: [BD 41-1753] The name 'StreamingFCLayer_Batch_0_wstrm' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# set_property -dict [list CONFIG.NSTREAMS {1} CONFIG.MEM_DEPTH {1} CONFIG.MEM_WIDTH {96} CONFIG.MEM_INIT {/tmp/finn_dev_jokar/code_gen_ipgen_StreamingFCLayer_Batch_0_r2l81l2y/} CONFIG.RAM_STYLE {auto} CONFIG.STRM0_DEPTH {1} CONFIG.STRM0_WIDTH {96} CONFIG.STRM0_OFFSET {0} ] [get_bd_cells /StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm]
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 18.0 is provided. The value is converted to long type(18)
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 4.0 is provided. The value is converted to long type(4)
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm/m_axis_0] [get_bd_intf_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0/weights_V_V]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_0/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm/aresetn]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_0/ap_clk] [get_bd_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm/aclk]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_0/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0/ap_rst_n]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_0/ap_clk] [get_bd_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_0/in0_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0/in0_V_V]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_0/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0/out_V_V]
+# save_bd_design
+Wrote  : </tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd> 
+# create_bd_cell -type ip -vlnv xilinx.com:hls:FMPadding_Batch_1:1.0 FMPadding_Batch_1
+# create_bd_cell -type ip -vlnv xilinx.com:hls:ConvolutionInputGenerator1D_1:1.0 ConvolutionInputGenerator1D_1
+WARNING: [BD 41-1753] The name 'ConvolutionInputGenerator1D_1' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type hier StreamingFCLayer_Batch_1
+# create_bd_pin -dir I -type clk /StreamingFCLayer_Batch_1/ap_clk
+# create_bd_pin -dir I -type rst /StreamingFCLayer_Batch_1/ap_rst_n
+# create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_1/out_V_V
+# create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_1/in0_V_V
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingFCLayer_Batch_1:1.0 /StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1
+# create_bd_cell -type ip -vlnv xilinx.com:user:memstream:1.0 /StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm
+WARNING: [BD 41-1753] The name 'StreamingFCLayer_Batch_1_wstrm' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# set_property -dict [list CONFIG.NSTREAMS {1} CONFIG.MEM_DEPTH {1} CONFIG.MEM_WIDTH {768} CONFIG.MEM_INIT {/tmp/finn_dev_jokar/code_gen_ipgen_StreamingFCLayer_Batch_1_jyi0q7y_/} CONFIG.RAM_STYLE {auto} CONFIG.STRM0_DEPTH {1} CONFIG.STRM0_WIDTH {768} CONFIG.STRM0_OFFSET {0} ] [get_bd_cells /StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm]
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 21.0 is provided. The value is converted to long type(21)
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 7.0 is provided. The value is converted to long type(7)
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm/m_axis_0] [get_bd_intf_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1/weights_V_V]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_1/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm/aresetn]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_1/ap_clk] [get_bd_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm/aclk]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_1/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1/ap_rst_n]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_1/ap_clk] [get_bd_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_1/in0_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1/in0_V_V]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_1/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1/out_V_V]
+# save_bd_design
+Wrote  : </tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd> 
+# create_bd_cell -type ip -vlnv xilinx.com:hls:FMPadding_Batch_2:1.0 FMPadding_Batch_2
+# create_bd_cell -type ip -vlnv xilinx.com:hls:ConvolutionInputGenerator1D_2:1.0 ConvolutionInputGenerator1D_2
+WARNING: [BD 41-1753] The name 'ConvolutionInputGenerator1D_2' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type hier StreamingFCLayer_Batch_2
+# create_bd_pin -dir I -type clk /StreamingFCLayer_Batch_2/ap_clk
+# create_bd_pin -dir I -type rst /StreamingFCLayer_Batch_2/ap_rst_n
+# create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_2/out_V_V
+# create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_2/in0_V_V
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingFCLayer_Batch_2:1.0 /StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2
+# create_bd_cell -type ip -vlnv xilinx.com:user:memstream:1.0 /StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm
+WARNING: [BD 41-1753] The name 'StreamingFCLayer_Batch_2_wstrm' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# set_property -dict [list CONFIG.NSTREAMS {1} CONFIG.MEM_DEPTH {1} CONFIG.MEM_WIDTH {768} CONFIG.MEM_INIT {/tmp/finn_dev_jokar/code_gen_ipgen_StreamingFCLayer_Batch_2_aqd1y8fw/} CONFIG.RAM_STYLE {auto} CONFIG.STRM0_DEPTH {1} CONFIG.STRM0_WIDTH {768} CONFIG.STRM0_OFFSET {0} ] [get_bd_cells /StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm]
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 21.0 is provided. The value is converted to long type(21)
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 7.0 is provided. The value is converted to long type(7)
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm/m_axis_0] [get_bd_intf_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2/weights_V_V]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_2/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm/aresetn]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_2/ap_clk] [get_bd_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm/aclk]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_2/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2/ap_rst_n]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_2/ap_clk] [get_bd_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_2/in0_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2/in0_V_V]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_2/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2/out_V_V]
+# save_bd_design
+Wrote  : </tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd> 
+# create_bd_cell -type ip -vlnv xilinx.com:hls:FMPadding_Batch_3:1.0 FMPadding_Batch_3
+# create_bd_cell -type ip -vlnv xilinx.com:hls:ConvolutionInputGenerator1D_3:1.0 ConvolutionInputGenerator1D_3
+WARNING: [BD 41-1753] The name 'ConvolutionInputGenerator1D_3' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type hier StreamingFCLayer_Batch_3
+# create_bd_pin -dir I -type clk /StreamingFCLayer_Batch_3/ap_clk
+# create_bd_pin -dir I -type rst /StreamingFCLayer_Batch_3/ap_rst_n
+# create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_3/out_V_V
+# create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_3/in0_V_V
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingFCLayer_Batch_3:1.0 /StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3
+# create_bd_cell -type ip -vlnv xilinx.com:user:memstream:1.0 /StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm
+WARNING: [BD 41-1753] The name 'StreamingFCLayer_Batch_3_wstrm' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# set_property -dict [list CONFIG.NSTREAMS {1} CONFIG.MEM_DEPTH {1} CONFIG.MEM_WIDTH {96} CONFIG.MEM_INIT {/tmp/finn_dev_jokar/code_gen_ipgen_StreamingFCLayer_Batch_3_lw7df92t/} CONFIG.RAM_STYLE {auto} CONFIG.STRM0_DEPTH {1} CONFIG.STRM0_WIDTH {96} CONFIG.STRM0_OFFSET {0} ] [get_bd_cells /StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm]
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 18.0 is provided. The value is converted to long type(18)
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 4.0 is provided. The value is converted to long type(4)
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm/m_axis_0] [get_bd_intf_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/weights_V_V]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_3/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm/aresetn]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_3/ap_clk] [get_bd_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm/aclk]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_3/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/ap_rst_n]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_3/ap_clk] [get_bd_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_3/in0_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/in0_V_V]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_3/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/out_V_V]
+# save_bd_design
+Wrote  : </tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd> 
+# make_bd_pins_external [get_bd_pins StreamingFIFO_0/ap_clk]
+# set_property name ap_clk [get_bd_ports ap_clk_0]
+# make_bd_pins_external [get_bd_pins StreamingFIFO_0/ap_rst_n]
+# set_property name ap_rst_n [get_bd_ports ap_rst_n_0]
+# make_bd_intf_pins_external [get_bd_intf_pins StreamingFIFO_0/in0_V_V]
+# set_property name s_axis_0 [get_bd_intf_ports in0_V_V_0]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins FMPadding_Batch_0/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins FMPadding_Batch_0/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFIFO_0/out_V_V] [get_bd_intf_pins FMPadding_Batch_0/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins ConvolutionInputGenerator1D_0/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins ConvolutionInputGenerator1D_0/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins FMPadding_Batch_0/out_V_V] [get_bd_intf_pins ConvolutionInputGenerator1D_0/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_0/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingFCLayer_Batch_0/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins ConvolutionInputGenerator1D_0/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_0/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins FMPadding_Batch_1/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins FMPadding_Batch_1/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_0/out_V_V] [get_bd_intf_pins FMPadding_Batch_1/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins ConvolutionInputGenerator1D_1/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins ConvolutionInputGenerator1D_1/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins FMPadding_Batch_1/out_V_V] [get_bd_intf_pins ConvolutionInputGenerator1D_1/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_1/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingFCLayer_Batch_1/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins ConvolutionInputGenerator1D_1/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_1/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins FMPadding_Batch_2/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins FMPadding_Batch_2/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_1/out_V_V] [get_bd_intf_pins FMPadding_Batch_2/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins ConvolutionInputGenerator1D_2/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins ConvolutionInputGenerator1D_2/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins FMPadding_Batch_2/out_V_V] [get_bd_intf_pins ConvolutionInputGenerator1D_2/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_2/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingFCLayer_Batch_2/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins ConvolutionInputGenerator1D_2/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_2/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins FMPadding_Batch_3/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins FMPadding_Batch_3/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_2/out_V_V] [get_bd_intf_pins FMPadding_Batch_3/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins ConvolutionInputGenerator1D_3/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins ConvolutionInputGenerator1D_3/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins FMPadding_Batch_3/out_V_V] [get_bd_intf_pins ConvolutionInputGenerator1D_3/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_3/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingFCLayer_Batch_3/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins ConvolutionInputGenerator1D_3/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_3/in0_V_V]
+# make_bd_intf_pins_external [get_bd_intf_pins StreamingFCLayer_Batch_3/out_V_V]
+# set_property name m_axis_0 [get_bd_intf_ports out_V_V_0]
+# set_property CONFIG.FREQ_HZ 100000000.000000 [get_bd_ports /ap_clk]
+# regenerate_bd_layout
+# validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /StreamingFIFO_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=finn_design_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=finn_design_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=finn_design_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=finn_design_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=finn_design_ap_clk_0 
+# save_bd_design
+Wrote  : </tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd> 
+# make_wrapper -files [get_files /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd] -top
+INFO: [BD 41-1662] The design 'finn_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/synth/finn_design.v
+VHDL Output written to : /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/sim/finn_design.v
+VHDL Output written to : /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/hdl/finn_design_wrapper.v
+# add_files -norecurse /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/hdl/finn_design_wrapper.v
+# ipx::package_project -root_dir /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/ip -vendor xilinx_finn -library finn -taxonomy /UserIP -module finn_design -import_files
+INFO: [BD 41-1662] The design 'finn_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/synth/finn_design.v
+VHDL Output written to : /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/sim/finn_design.v
+VHDL Output written to : /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/hdl/finn_design_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFIFO_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FMPadding_Batch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ConvolutionInputGenerator1D_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FMPadding_Batch_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ConvolutionInputGenerator1D_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FMPadding_Batch_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ConvolutionInputGenerator1D_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FMPadding_Batch_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ConvolutionInputGenerator1D_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm .
+Exporting to file /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/hw_handoff/finn_design.hwh
+Generated Block Design Tcl file /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/hw_handoff/finn_design_bd.tcl
+Generated Hardware Definition File /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/synth/finn_design.hwdef
+CRITICAL WARNING: [IP_Flow 19-5234] Found an invalid attribute: 'Misformed interface info attr: xilinx.com:interface:axis:1.0 m_axis_0'
+CRITICAL WARNING: [IP_Flow 19-5234] Found an invalid attribute: 'Misformed interface info attr: xilinx.com:interface:axis:1.0 m_axis_0'
+CRITICAL WARNING: [IP_Flow 19-5234] Found an invalid attribute: 'Misformed interface info attr: xilinx.com:interface:axis:1.0 m_axis_0'
+CRITICAL WARNING: [IP_Flow 19-5234] Found an invalid attribute: 'Misformed interface info attr: xilinx.com:interface:axis:1.0 s_axis_0'
+CRITICAL WARNING: [IP_Flow 19-5234] Found an invalid attribute: 'Misformed interface info attr: xilinx.com:interface:axis:1.0 s_axis_0'
+CRITICAL WARNING: [IP_Flow 19-5234] Found an invalid attribute: 'Misformed interface info attr: xilinx.com:interface:axis:1.0 s_axis_0'
+WARNING: [IP_Flow 19-3157] Bus Interface 'RST.AP_RST_N': Bus parameter POLARITY is ACTIVE_LOW but port 'ap_rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-991] Unrecognized or unsupported file 'sim/finn_design.protoinst' found in file group 'Simulation'.
+Resolution: Remove the file from the specified file group.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+# set_property core_revision 2 [ipx::find_open_core xilinx_finn:finn:finn_design:1.0]
+# ipx::create_xgui_files [ipx::find_open_core xilinx_finn:finn:finn_design:1.0]
+# set_property value_resolve_type user [ipx::get_bus_parameters -of [ipx::get_bus_interfaces -of [ipx::current_core ]]]
+# ipx::update_checksums [ipx::find_open_core xilinx_finn:finn:finn_design:1.0]
+# ipx::save_core [ipx::find_open_core xilinx_finn:finn:finn_design:1.0]
+# set all_v_files [get_files -filter {FILE_TYPE == Verilog && USED_IN_SYNTHESIS == 1} ]
+# set fp [open /tmp/finn_dev_jokar/vivado_stitch_proj_yys_82a9/all_verilog_srcs.txt w]
+# foreach vf $all_v_files {puts $fp $vf}
+# close $fp
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 18 13:06:53 2023...

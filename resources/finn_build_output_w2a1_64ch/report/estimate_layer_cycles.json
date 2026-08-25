@@ -1,0 +1,14 @@
+{
+  "FMPadding_Batch_0": 66,
+  "ConvolutionInputGenerator1D_0": 67,
+  "StreamingFCLayer_Batch_0": 64,
+  "FMPadding_Batch_1": 66,
+  "ConvolutionInputGenerator1D_1": 67,
+  "StreamingFCLayer_Batch_1": 64,
+  "FMPadding_Batch_2": 66,
+  "ConvolutionInputGenerator1D_2": 67,
+  "StreamingFCLayer_Batch_2": 64,
+  "FMPadding_Batch_3": 66,
+  "ConvolutionInputGenerator1D_3": 67,
+  "StreamingFCLayer_Batch_3": 64
+}

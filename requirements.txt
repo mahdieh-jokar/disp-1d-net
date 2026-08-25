@@ -1,0 +1,7 @@
+# Pinned to versions confirmed working against this pipeline.
+torch>=2.5.1
+numpy>=1.26.4
+scikit-image>=0.19
+imageio>=2.19
+matplotlib>=3.5
+scikit-learn>=1.0

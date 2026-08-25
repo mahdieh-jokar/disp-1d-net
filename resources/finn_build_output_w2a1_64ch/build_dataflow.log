@@ -1,0 +1,1431 @@
+[2023-09-18 13:01:15,685] Running step: step_qonnx_to_finn [1/17]
+[2023-09-18 13:01:15,685] Running step: step_tidy_up [2/17]
+[2023-09-18 13:01:15,718] Running step: step_streamline [3/17]
+[2023-09-18 13:01:16,390] /workspace/finn-base/src/finn/transformation/infer_data_layouts.py:119: UserWarning: Assuming 4D input is NCHW
+[2023-09-18 13:01:16,390]   warnings.warn("Assuming 4D input is NCHW")
+[2023-09-18 13:01:16,395] Running step: step_convert_to_hls [4/17]
+[2023-09-18 13:01:16,436] Running step: step_create_dataflow_partition [5/17]
+[2023-09-18 13:01:16,442] Running step: step_target_fps_parallelization [6/17]
+[2023-09-18 13:01:16,442] /workspace/finn/src/finn/transformation/fpgadataflow/set_folding.py:181: UserWarning: SetFolding doesn't know how to handle op_type ConvolutionInputGenerator1D
+[2023-09-18 13:01:16,442]   warnings.warn(
+[2023-09-18 13:01:16,452] Running step: step_apply_folding_config [7/17]
+[2023-09-18 13:01:16,452] Running step: step_generate_estimate_reports [8/17]
+[2023-09-18 13:01:16,466] Running step: step_hls_codegen [9/17]
+[2023-09-18 13:01:16,514] Running step: step_hls_ipgen [10/17]
+[2023-09-18 13:05:48,009] Running step: step_set_fifo_depths [11/17]
+[2023-09-18 13:05:48,035] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_0
+[2023-09-18 13:05:48,035]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:05:48,036] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator1D_0
+[2023-09-18 13:05:48,036]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:05:48,036] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingFCLayer_Batch_0
+[2023-09-18 13:05:48,036]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:05:48,037] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_1
+[2023-09-18 13:05:48,037]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:05:48,038] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator1D_1
+[2023-09-18 13:05:48,038]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:05:48,038] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingFCLayer_Batch_1
+[2023-09-18 13:05:48,038]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:05:48,039] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_2
+[2023-09-18 13:05:48,039]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:05:48,039] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator1D_2
+[2023-09-18 13:05:48,039]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:05:48,040] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingFCLayer_Batch_2
+[2023-09-18 13:05:48,040]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:05:48,041] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_3
+[2023-09-18 13:05:48,041]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:05:48,041] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator1D_3
+[2023-09-18 13:05:48,041]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:05:48,042] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingFCLayer_Batch_3
+[2023-09-18 13:05:48,042]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:05:48,125] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator1D_3
+[2023-09-18 13:05:48,125] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingFCLayer_Batch_3
+[2023-09-18 13:05:48,125]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:05:48,125]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:05:48,126] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_3
+[2023-09-18 13:05:48,126]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:05:55,770] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingFCLayer_Batch_2
+[2023-09-18 13:05:55,771]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:05:55,790] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator1D_2
+[2023-09-18 13:05:55,790]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:05:55,926] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_2
+[2023-09-18 13:05:55,926]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:05:55,997] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingFCLayer_Batch_1
+[2023-09-18 13:05:55,997]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:03,681] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator1D_1
+[2023-09-18 13:06:03,681]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:03,840] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_1
+[2023-09-18 13:06:03,841]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:03,913] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingFCLayer_Batch_0
+[2023-09-18 13:06:03,913]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:04,013] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator1D_0
+[2023-09-18 13:06:04,013]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:11,694] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_0
+[2023-09-18 13:06:11,694]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:36,104] make: Entering directory '/tmp/finn_dev_jokar/pyverilator_ipstitched_qtpy4w24'
+[2023-09-18 13:06:36,104] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11   -c -o pyverilator_wrapper.o /tmp/finn_dev_jokar/pyverilator_ipstitched_qtpy4w24/pyverilator_wrapper.cpp
+[2023-09-18 13:06:36,104] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11   -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+[2023-09-18 13:06:36,104] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11   -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+[2023-09-18 13:06:36,104] /usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vfinn_design_wrapper.cpp > Vfinn_design_wrapper__ALLcls.cpp
+[2023-09-18 13:06:36,104] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11   -c -o Vfinn_design_wrapper__ALLcls.o Vfinn_design_wrapper__ALLcls.cpp
+[2023-09-18 13:06:36,104] /usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vfinn_design_wrapper__Trace.cpp Vfinn_design_wrapper__Syms.cpp Vfinn_design_wrapper__Trace__Slow.cpp > Vfinn_design_wrapper__ALLsup.cpp
+[2023-09-18 13:06:36,105] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11   -c -o Vfinn_design_wrapper__ALLsup.o Vfinn_design_wrapper__ALLsup.cpp
+[2023-09-18 13:06:36,105]       Archiving Vfinn_design_wrapper__ALL.a ...
+[2023-09-18 13:06:36,105] ar r Vfinn_design_wrapper__ALL.a Vfinn_design_wrapper__ALLcls.o Vfinn_design_wrapper__ALLsup.o
+[2023-09-18 13:06:36,105] ranlib Vfinn_design_wrapper__ALL.a
+[2023-09-18 13:06:36,105] g++ -fPIC -shared pyverilator_wrapper.o verilated.o verilated_vcd_c.o Vfinn_design_wrapper__ALL.a    -o Vfinn_design_wrapper -lm -lstdc++  2>&1 | c++filt
+[2023-09-18 13:06:36,105] make: Leaving directory '/tmp/finn_dev_jokar/pyverilator_ipstitched_qtpy4w24'
+[2023-09-18 13:06:36,105] ar: creating Vfinn_design_wrapper__ALL.a
+[2023-09-18 13:06:36,240] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_0
+[2023-09-18 13:06:36,240]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:06:36,240] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator1D_0
+[2023-09-18 13:06:36,240]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:06:36,241] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingFCLayer_Batch_0
+[2023-09-18 13:06:36,241]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:06:36,241] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_1
+[2023-09-18 13:06:36,241]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:06:36,241] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator1D_1
+[2023-09-18 13:06:36,241]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:06:36,241] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingFCLayer_Batch_1
+[2023-09-18 13:06:36,241]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:06:36,241] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_2
+[2023-09-18 13:06:36,241]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:06:36,241] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator1D_2
+[2023-09-18 13:06:36,241]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:06:36,241] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingFCLayer_Batch_2
+[2023-09-18 13:06:36,241]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:06:36,241] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_3
+[2023-09-18 13:06:36,241]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:06:36,241] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator1D_3
+[2023-09-18 13:06:36,241]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:06:36,242] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingFCLayer_Batch_3
+[2023-09-18 13:06:36,242]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2023-09-18 13:06:36,325] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingFCLayer_Batch_2
+[2023-09-18 13:06:36,325] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingFCLayer_Batch_3
+[2023-09-18 13:06:36,325] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_3
+[2023-09-18 13:06:36,325] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator1D_3
+[2023-09-18 13:06:36,325]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:36,325]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:36,325]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:36,325]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:36,326] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_2
+[2023-09-18 13:06:36,326]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:36,326] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator1D_2
+[2023-09-18 13:06:36,326]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:36,326] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingFCLayer_Batch_1
+[2023-09-18 13:06:36,326]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:36,326] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator1D_1
+[2023-09-18 13:06:36,326]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:36,326] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_1
+[2023-09-18 13:06:36,326]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:36,326] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator1D_0
+[2023-09-18 13:06:36,326] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_0
+[2023-09-18 13:06:36,326] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingFCLayer_Batch_0
+[2023-09-18 13:06:36,326]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:36,326]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:36,326]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2023-09-18 13:06:43,666] Running step: step_create_stitched_ip [12/17]
+[2023-09-18 13:06:53,304] Vivado stitched IP written into output_ipstitch_ooc_rtlsim/stitched_ip
+[2023-09-18 13:06:53,305] Running step: step_measure_rtlsim_performance [13/17]
+[2023-09-18 13:07:11,020] make: Entering directory '/tmp/finn_dev_jokar/pyverilator_ipstitched_xwqo_g3y'
+[2023-09-18 13:07:11,020] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11 -O3   -c -o pyverilator_wrapper.o /tmp/finn_dev_jokar/pyverilator_ipstitched_xwqo_g3y/pyverilator_wrapper.cpp
+[2023-09-18 13:07:11,020] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11 -O3   -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+[2023-09-18 13:07:11,020] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11 -O3   -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+[2023-09-18 13:07:11,020] /usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vfinn_design_wrapper.cpp > Vfinn_design_wrapper__ALLcls.cpp
+[2023-09-18 13:07:11,020] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11 -O3   -c -o Vfinn_design_wrapper__ALLcls.o Vfinn_design_wrapper__ALLcls.cpp
+[2023-09-18 13:07:11,020] /usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vfinn_design_wrapper__Trace.cpp Vfinn_design_wrapper__Syms.cpp Vfinn_design_wrapper__Trace__Slow.cpp > Vfinn_design_wrapper__ALLsup.cpp
+[2023-09-18 13:07:11,020] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11 -O3   -c -o Vfinn_design_wrapper__ALLsup.o Vfinn_design_wrapper__ALLsup.cpp
+[2023-09-18 13:07:11,020]       Archiving Vfinn_design_wrapper__ALL.a ...
+[2023-09-18 13:07:11,020] ar r Vfinn_design_wrapper__ALL.a Vfinn_design_wrapper__ALLcls.o Vfinn_design_wrapper__ALLsup.o
+[2023-09-18 13:07:11,020] ranlib Vfinn_design_wrapper__ALL.a
+[2023-09-18 13:07:11,020] g++ -fPIC -shared pyverilator_wrapper.o verilated.o verilated_vcd_c.o Vfinn_design_wrapper__ALL.a    -o Vfinn_design_wrapper -lm -lstdc++  2>&1 | c++filt
+[2023-09-18 13:07:11,020] make: Leaving directory '/tmp/finn_dev_jokar/pyverilator_ipstitched_xwqo_g3y'
+[2023-09-18 13:07:11,020] ar: creating Vfinn_design_wrapper__ALL.a
+[2023-09-18 13:07:11,036] Running step: step_out_of_context_synthesis [14/17]
+[2023-09-18 13:10:34,012] ap_clk
+[2023-09-18 13:10:34,013] xc7a200t
+[2023-09-18 13:10:34,013] 10.000000
+[2023-09-18 13:10:34,013] 0
+[2023-09-18 13:10:34,013] 
+[2023-09-18 13:10:34,013] ****** Vivado v2019.1 (64-bit)
+[2023-09-18 13:10:34,013]   **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+[2023-09-18 13:10:34,013]   **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+[2023-09-18 13:10:34,013]     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+[2023-09-18 13:10:34,013] 
+[2023-09-18 13:10:34,013] source finn_design_wrapper.tcl
+[2023-09-18 13:10:34,013] # set fpga_part "xc7a200t"
+[2023-09-18 13:10:34,013] # set origin_dir "."
+[2023-09-18 13:10:34,013] # if { [info exists ::origin_dir_loc] } {
+[2023-09-18 13:10:34,013] #   set origin_dir $::origin_dir_loc
+[2023-09-18 13:10:34,013] # }
+[2023-09-18 13:10:34,013] # variable script_file
+[2023-09-18 13:10:34,013] # set script_file "vivadocompile.tcl"
+[2023-09-18 13:10:34,013] # proc help {} {
+[2023-09-18 13:10:34,013] #   variable script_file
+[2023-09-18 13:10:34,013] #   puts "\nDescription:"
+[2023-09-18 13:10:34,013] #   puts "Recreate a Vivado project from this script. The created project will be"
+[2023-09-18 13:10:34,013] #   puts "functionally equivalent to the original project for which this script was"
+[2023-09-18 13:10:34,013] #   puts "generated. The script contains commands for creating a project, filesets,"
+[2023-09-18 13:10:34,013] #   puts "runs, adding/importing sources and setting properties on various objects.\n"
+[2023-09-18 13:10:34,013] #   puts "Syntax:"
+[2023-09-18 13:10:34,013] #   puts "$script_file"
+[2023-09-18 13:10:34,013] #   puts "$script_file -tclargs \[--origin_dir <path>\]"
+[2023-09-18 13:10:34,013] #   puts "$script_file -tclargs \[--help\]\n"
+[2023-09-18 13:10:34,013] #   puts "Usage:"
+[2023-09-18 13:10:34,013] #   puts "Name                   Description"
+[2023-09-18 13:10:34,013] #   puts "-------------------------------------------------------------------------"
+[2023-09-18 13:10:34,013] #   puts "\[--origin_dir <path>\]  Determine source file paths wrt this path. Default"
+[2023-09-18 13:10:34,013] #   puts "                       origin_dir path value is \".\", otherwise, the value"
+[2023-09-18 13:10:34,013] #   puts "                       that was set with the \"-paths_relative_to\" switch"
+[2023-09-18 13:10:34,013] #   puts "                       when this script was generated.\n"
+[2023-09-18 13:10:34,013] #   puts "\[--help\]               Print help information for this script"
+[2023-09-18 13:10:34,013] #   puts "-------------------------------------------------------------------------\n"
+[2023-09-18 13:10:34,013] #   exit 0
+[2023-09-18 13:10:34,013] # }
+[2023-09-18 13:10:34,013] # if { $::argc > 0 } {
+[2023-09-18 13:10:34,013] #   for {set i 0} {$i < [llength $::argc]} {incr i} {
+[2023-09-18 13:10:34,013] #     set option [string trim [lindex $::argv $i]]
+[2023-09-18 13:10:34,013] #     switch -regexp -- $option {
+[2023-09-18 13:10:34,013] #       "--origin_dir" { incr i; set origin_dir [lindex $::argv $i] }
+[2023-09-18 13:10:34,013] #       "--help"       { help }
+[2023-09-18 13:10:34,013] #       default {
+[2023-09-18 13:10:34,013] #         if { [regexp {^-} $option] } {
+[2023-09-18 13:10:34,014] #           puts "ERROR: Unknown option '$option' specified, please type '$script_file -tclargs --help' for usage info.\n"
+[2023-09-18 13:10:34,014] #           return 1
+[2023-09-18 13:10:34,014] #         }
+[2023-09-18 13:10:34,014] #       }
+[2023-09-18 13:10:34,014] #     }
+[2023-09-18 13:10:34,014] #   }
+[2023-09-18 13:10:34,014] # }
+[2023-09-18 13:10:34,014] # set orig_proj_dir "[file normalize "$origin_dir/vivadocompile"]"
+[2023-09-18 13:10:34,014] # create_project -force vivadocompile ./vivadocompile -part $fpga_part
+[2023-09-18 13:10:34,014] # set proj_dir [get_property directory [current_project]]
+[2023-09-18 13:10:34,014] # set obj [get_projects vivadocompile]
+[2023-09-18 13:10:34,014] # set_property "default_lib" "xil_defaultlib" $obj
+[2023-09-18 13:10:34,014] # set_property "sim.ip.auto_export_scripts" "1" $obj
+[2023-09-18 13:10:34,014] # set_property "simulator_language" "Mixed" $obj
+[2023-09-18 13:10:34,014] # if {[string equal [get_filesets -quiet sources_1] ""]} {
+[2023-09-18 13:10:34,014] #   create_fileset -srcset sources_1
+[2023-09-18 13:10:34,014] # }
+[2023-09-18 13:10:34,014] # set obj [get_filesets sources_1]
+[2023-09-18 13:10:34,014] # source sources.tcl
+[2023-09-18 13:10:34,014] ## set files [list \
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/dummy_nachiket_fooling_zsh_for_loops.h"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/ConvolutionInputGenerator1D_0_ConvolutionInputGene_1.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/ConvolutionInputGenerator1D_0_ConvolutionInputGenerator1D_0.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/ConvolutionInputGenerator1D_0_ConvolutionInputGenerator1D_0_mux_42_4_1_1.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/ConvolutionInputGenerator1D_1_ConvolutionInputGene_1.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/ConvolutionInputGenerator1D_1_ConvolutionInputGenerator1D_1.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/ConvolutionInputGenerator1D_1_ConvolutionInputGenerator1D_1_mux_42_64_1_1.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/ConvolutionInputGenerator1D_2_ConvolutionInputGene_1.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/ConvolutionInputGenerator1D_2_ConvolutionInputGenerator1D_2.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/ConvolutionInputGenerator1D_2_ConvolutionInputGenerator1D_2_mux_42_64_1_1.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/ConvolutionInputGenerator1D_3_ConvolutionInputGene_1.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/ConvolutionInputGenerator1D_3_ConvolutionInputGenerator1D_3.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/ConvolutionInputGenerator1D_3_ConvolutionInputGenerator1D_3_mux_42_64_1_1.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/FMPadding_Batch_0_FMPadding_Batch_0.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/FMPadding_Batch_0_FMPadding_nonsquare.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/FMPadding_Batch_0_FMPadding_nonsquare_s.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/FMPadding_Batch_1_FMPadding_Batch_1.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/FMPadding_Batch_1_FMPadding_nonsquare.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/FMPadding_Batch_1_FMPadding_nonsquare_s.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/FMPadding_Batch_2_FMPadding_Batch_2.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/FMPadding_Batch_2_FMPadding_nonsquare.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/FMPadding_Batch_2_FMPadding_nonsquare_s.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/FMPadding_Batch_3_FMPadding_Batch_3.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/FMPadding_Batch_3_FMPadding_nonsquare.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/FMPadding_Batch_3_FMPadding_nonsquare_s.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/Q_srl.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/StreamingFCLayer_Batch_0_Matrix_Vector_Activa.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/StreamingFCLayer_Batch_0_StreamingFCLayer_Batch_0.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/StreamingFCLayer_Batch_0_StreamingFCLayer_Batch_0_mul_4s_4s_8_1_1.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/StreamingFCLayer_Batch_1_Matrix_Vector_Activa.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/StreamingFCLayer_Batch_1_StreamingFCLayer_Batch_1.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/StreamingFCLayer_Batch_1_StreamingFCLayer_Batch_1_mul_8ns_4s_12_1_1.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v"]"\
+[2023-09-18 13:10:34,014] ## "[file normalize "$origin_dir/StreamingFCLayer_Batch_2_StreamingFCLayer_Batch_2.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/StreamingFCLayer_Batch_2_StreamingFCLayer_Batch_2_mul_8ns_4s_12_1_1.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/StreamingFCLayer_Batch_3_Matrix_Vector_Activa.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/StreamingFCLayer_Batch_3_StreamingFCLayer_Batch_3.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/StreamingFCLayer_Batch_3_StreamingFCLayer_Batch_3_mul_8ns_4s_12_1_1.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/StreamingFIFO_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/axilite_if.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_ConvolutionInputGenerator1D_0_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_ConvolutionInputGenerator1D_1_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_ConvolutionInputGenerator1D_2_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_ConvolutionInputGenerator1D_3_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_FMPadding_Batch_0_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_FMPadding_Batch_1_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_FMPadding_Batch_2_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_FMPadding_Batch_3_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_StreamingFCLayer_Batch_0_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_StreamingFCLayer_Batch_0_wstrm_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_StreamingFCLayer_Batch_1_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_StreamingFCLayer_Batch_1_wstrm_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_StreamingFCLayer_Batch_2_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_StreamingFCLayer_Batch_2_wstrm_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_StreamingFCLayer_Batch_3_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_StreamingFCLayer_Batch_3_wstrm_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_StreamingFIFO_0_0.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/finn_design_wrapper.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/memstream.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/memstream_multiblock.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/memstream_singleblock.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/mux.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/ramb18_sdp.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/ramb18_wf_dualport.v"]"\
+[2023-09-18 13:10:34,015] ## "[file normalize "$origin_dir/dummy_vhdl_file.vhd"]"\
+[2023-09-18 13:10:34,015] ## ]
+[2023-09-18 13:10:34,015] ## add_files -norecurse -fileset $obj $files
+[2023-09-18 13:10:34,015] # add_files -norecurse -fileset $obj $files
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/dummy_nachiket_fooling_zsh_for_loops.h' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ConvolutionInputGenerator1D_0_ConvolutionInputGene_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ConvolutionInputGenerator1D_0_ConvolutionInputGenerator1D_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ConvolutionInputGenerator1D_0_ConvolutionInputGenerator1D_0_mux_42_4_1_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ConvolutionInputGenerator1D_1_ConvolutionInputGene_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ConvolutionInputGenerator1D_1_ConvolutionInputGenerator1D_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ConvolutionInputGenerator1D_1_ConvolutionInputGenerator1D_1_mux_42_64_1_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ConvolutionInputGenerator1D_2_ConvolutionInputGene_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ConvolutionInputGenerator1D_2_ConvolutionInputGenerator1D_2.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ConvolutionInputGenerator1D_2_ConvolutionInputGenerator1D_2_mux_42_64_1_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ConvolutionInputGenerator1D_3_ConvolutionInputGene_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ConvolutionInputGenerator1D_3_ConvolutionInputGenerator1D_3.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ConvolutionInputGenerator1D_3_ConvolutionInputGenerator1D_3_mux_42_64_1_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/FMPadding_Batch_0_FMPadding_Batch_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/FMPadding_Batch_0_FMPadding_nonsquare.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/FMPadding_Batch_0_FMPadding_nonsquare_s.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/FMPadding_Batch_1_FMPadding_Batch_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/FMPadding_Batch_1_FMPadding_nonsquare.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/FMPadding_Batch_1_FMPadding_nonsquare_s.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/FMPadding_Batch_2_FMPadding_Batch_2.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/FMPadding_Batch_2_FMPadding_nonsquare.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,015] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/FMPadding_Batch_2_FMPadding_nonsquare_s.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/FMPadding_Batch_3_FMPadding_Batch_3.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/FMPadding_Batch_3_FMPadding_nonsquare.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/FMPadding_Batch_3_FMPadding_nonsquare_s.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/Q_srl.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/StreamingFCLayer_Batch_0_Matrix_Vector_Activa.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/StreamingFCLayer_Batch_0_StreamingFCLayer_Batch_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/StreamingFCLayer_Batch_0_StreamingFCLayer_Batch_0_mul_4s_4s_8_1_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/StreamingFCLayer_Batch_1_Matrix_Vector_Activa.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/StreamingFCLayer_Batch_1_StreamingFCLayer_Batch_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/StreamingFCLayer_Batch_1_StreamingFCLayer_Batch_1_mul_8ns_4s_12_1_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/StreamingFCLayer_Batch_2_Matrix_Vector_Activa.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/StreamingFCLayer_Batch_2_StreamingFCLayer_Batch_2.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/StreamingFCLayer_Batch_2_StreamingFCLayer_Batch_2_mul_8ns_4s_12_1_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/StreamingFCLayer_Batch_3_Matrix_Vector_Activa.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/StreamingFCLayer_Batch_3_StreamingFCLayer_Batch_3.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/StreamingFCLayer_Batch_3_StreamingFCLayer_Batch_3_mul_8ns_4s_12_1_1.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/StreamingFIFO_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/axilite_if.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_ConvolutionInputGenerator1D_0_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_ConvolutionInputGenerator1D_1_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_ConvolutionInputGenerator1D_2_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_ConvolutionInputGenerator1D_3_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_FMPadding_Batch_0_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_FMPadding_Batch_1_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_FMPadding_Batch_2_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_FMPadding_Batch_3_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_StreamingFCLayer_Batch_0_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_StreamingFCLayer_Batch_0_wstrm_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_StreamingFCLayer_Batch_1_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_StreamingFCLayer_Batch_1_wstrm_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_StreamingFCLayer_Batch_2_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_StreamingFCLayer_Batch_2_wstrm_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_StreamingFCLayer_Batch_3_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_StreamingFCLayer_Batch_3_wstrm_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_StreamingFIFO_0_0.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_wrapper.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/memstream.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/memstream_multiblock.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/memstream_singleblock.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/mux.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ramb18_sdp.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/ramb18_wf_dualport.v' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] WARNING: [filemgmt 56-12] File '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/dummy_vhdl_file.vhd' cannot be added to the project because it already exists in the project, skipping this file
+[2023-09-18 13:10:34,016] # source headers.tcl
+[2023-09-18 13:10:34,016] ## set file "$origin_dir/dummy_nachiket_fooling_zsh_for_loops.h"
+[2023-09-18 13:10:34,016] ## set file [file normalize $file]
+[2023-09-18 13:10:34,016] ## set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
+[2023-09-18 13:10:34,016] ## set_property "file_type" "Verilog Header" $file_obj
+[2023-09-18 13:10:34,016] # set obj [get_filesets sources_1]
+[2023-09-18 13:10:34,016] # set_property "top" "$argv" $obj
+[2023-09-18 13:10:34,016] # if {[string equal [get_filesets -quiet constrs_1] ""]} {
+[2023-09-18 13:10:34,016] #   create_fileset -constrset constrs_1
+[2023-09-18 13:10:34,016] # }
+[2023-09-18 13:10:34,016] # set obj [get_filesets constrs_1]
+[2023-09-18 13:10:34,016] # set file "[file normalize "$origin_dir/$argv.xdc"]"
+[2023-09-18 13:10:34,017] # set file_added [add_files -norecurse -fileset $obj $file]
+[2023-09-18 13:10:34,017] # set file "$origin_dir/$argv.xdc"
+[2023-09-18 13:10:34,017] # set file [file normalize $file]
+[2023-09-18 13:10:34,017] # set file_obj [get_files -of_objects [get_filesets constrs_1] [list "*$file"]]
+[2023-09-18 13:10:34,017] # set_property "file_type" "XDC" $file_obj
+[2023-09-18 13:10:34,017] # set obj [get_filesets constrs_1]
+[2023-09-18 13:10:34,017] # if {[string equal [get_filesets -quiet sim_1] ""]} {
+[2023-09-18 13:10:34,017] #   create_fileset -simset sim_1
+[2023-09-18 13:10:34,017] # }
+[2023-09-18 13:10:34,017] # set obj [get_filesets sim_1]
+[2023-09-18 13:10:34,017] # set obj [get_filesets sim_1]
+[2023-09-18 13:10:34,017] # set_property "top" "$argv" $obj
+[2023-09-18 13:10:34,017] # set_property "xelab.nosort" "1" $obj
+[2023-09-18 13:10:34,017] # set_property "xelab.unifast" "" $obj
+[2023-09-18 13:10:34,017] # set_property strategy "Vivado Synthesis Defaults" [get_runs synth_1]
+[2023-09-18 13:10:34,017] # set_property strategy "Flow_PerfOptimized_high" [get_runs synth_1]
+[2023-09-18 13:10:34,017] # set_param synth.elaboration.rodinMoreOptions {rt::set_parameter ignoreVhdlAssertStmts false}
+[2023-09-18 13:10:34,017] # set obj [get_runs synth_1]
+[2023-09-18 13:10:34,017] # set_property -name {steps.synth_design.args.more options} -value {-mode out_of_context} -objects $obj
+[2023-09-18 13:10:34,017] # set_property STEPS.SYNTH_DESIGN.ARGS.RETIMING true [get_runs synth_1]
+[2023-09-18 13:10:34,017] # current_run -synthesis [get_runs synth_1]
+[2023-09-18 13:10:34,017] # set_property strategy "Vivado Implementation Defaults" [get_runs impl_1]
+[2023-09-18 13:10:34,017] # set obj [get_runs impl_1]
+[2023-09-18 13:10:34,017] # set_property "steps.write_bitstream.args.readback_file" "0" $obj
+[2023-09-18 13:10:34,017] # set_property "steps.write_bitstream.args.verbose" "0" $obj
+[2023-09-18 13:10:34,017] # current_run -implementation [get_runs impl_1]
+[2023-09-18 13:10:34,017] # puts "INFO: Project created:vivadocompile"
+[2023-09-18 13:10:34,017] INFO: Project created:vivadocompile
+[2023-09-18 13:10:34,017] # launch_runs -jobs 8 impl_1 -to_step route_design
+[2023-09-18 13:10:34,017] [Mon Sep 18 13:07:19 2023] Launched synth_1...
+[2023-09-18 13:10:34,017] Run output will be captured here: /tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/vivadocompile/vivadocompile.runs/synth_1/runme.log
+[2023-09-18 13:10:34,017] [Mon Sep 18 13:07:20 2023] Launched impl_1...
+[2023-09-18 13:10:34,017] Run output will be captured here: /tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/vivadocompile/vivadocompile.runs/impl_1/runme.log
+[2023-09-18 13:10:34,017] # wait_on_run impl_1
+[2023-09-18 13:10:34,017] [Mon Sep 18 13:07:20 2023] Waiting for impl_1 to finish...
+[2023-09-18 13:10:34,017] 
+[2023-09-18 13:10:34,017] *** Running vivado
+[2023-09-18 13:10:34,017]     with args -log finn_design_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source finn_design_wrapper.tcl -notrace
+[2023-09-18 13:10:34,017] 
+[2023-09-18 13:10:34,017] 
+[2023-09-18 13:10:34,017] ****** Vivado v2019.1 (64-bit)
+[2023-09-18 13:10:34,017]   **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+[2023-09-18 13:10:34,017]   **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+[2023-09-18 13:10:34,017]     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+[2023-09-18 13:10:34,017] 
+[2023-09-18 13:10:34,017] source finn_design_wrapper.tcl -notrace
+[2023-09-18 13:10:34,017] Command: link_design -top finn_design_wrapper -part xc7a200tfbg484-3
+[2023-09-18 13:10:34,017] Design is defaulting to srcset: sources_1
+[2023-09-18 13:10:34,017] Design is defaulting to constrset: constrs_1
+[2023-09-18 13:10:34,017] INFO: [Device 21-403] Loading part xc7a200tfbg484-3
+[2023-09-18 13:10:34,017] INFO: [Netlist 29-17] Analyzing 199 Unisim elements for replacement
+[2023-09-18 13:10:34,017] INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+[2023-09-18 13:10:34,017] INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+[2023-09-18 13:10:34,017] INFO: [Project 1-570] Preparing netlist for logic optimization
+[2023-09-18 13:10:34,017] Parsing XDC File [/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_wrapper.xdc]
+[2023-09-18 13:10:34,017] Finished Parsing XDC File [/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/finn_design_wrapper.xdc]
+[2023-09-18 13:10:34,017] INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+[2023-09-18 13:10:34,017] Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1762.309 ; gain = 0.000 ; free physical = 4717 ; free virtual = 136588
+[2023-09-18 13:10:34,018] INFO: [Project 1-111] Unisim Transformation Summary:
+[2023-09-18 13:10:34,018] No Unisim elements were transformed.
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] 7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+[2023-09-18 13:10:34,018] link_design completed successfully
+[2023-09-18 13:10:34,018] Command: opt_design
+[2023-09-18 13:10:34,018] Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+[2023-09-18 13:10:34,018] INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+[2023-09-18 13:10:34,018] Running DRC as a precondition to command opt_design
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Starting DRC Task
+[2023-09-18 13:10:34,018] INFO: [DRC 23-27] Running DRC with 8 threads
+[2023-09-18 13:10:34,018] INFO: [Project 1-461] DRC finished with 0 Errors
+[2023-09-18 13:10:34,018] INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.94 . Memory (MB): peak = 1928.465 ; gain = 160.219 ; free physical = 4680 ; free virtual = 136551
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Starting Cache Timing Information Task
+[2023-09-18 13:10:34,018] INFO: [Timing 38-35] Done setting XDC timing constraints.
+[2023-09-18 13:10:34,018] Ending Cache Timing Information Task | Checksum: c2d9e4f6
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2334.652 ; gain = 406.188 ; free physical = 4276 ; free virtual = 136146
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Starting Logic Optimization Task
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Phase 1 Retarget
+[2023-09-18 13:10:34,018] INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+[2023-09-18 13:10:34,018] INFO: [Opt 31-49] Retargeted 0 cell(s).
+[2023-09-18 13:10:34,018] Phase 1 Retarget | Checksum: 10ae5bb35
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2451.590 ; gain = 0.000 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,018] INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Phase 2 Constant propagation
+[2023-09-18 13:10:34,018] INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+[2023-09-18 13:10:34,018] Phase 2 Constant propagation | Checksum: 1455d54d7
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2451.590 ; gain = 0.000 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,018] INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Phase 3 Sweep
+[2023-09-18 13:10:34,018] Phase 3 Sweep | Checksum: bfcf8d0d
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2451.590 ; gain = 0.000 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,018] INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Phase 4 BUFG optimization
+[2023-09-18 13:10:34,018] Phase 4 BUFG optimization | Checksum: bfcf8d0d
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2451.590 ; gain = 0.000 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,018] INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+[2023-09-18 13:10:34,018] 
+[2023-09-18 13:10:34,018] Phase 5 Shift Register Optimization
+[2023-09-18 13:10:34,018] INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+[2023-09-18 13:10:34,019] Phase 5 Shift Register Optimization | Checksum: bfcf8d0d
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2451.590 ; gain = 0.000 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,019] INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] Phase 6 Post Processing Netlist
+[2023-09-18 13:10:34,019] Phase 6 Post Processing Netlist | Checksum: bfcf8d0d
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2451.590 ; gain = 0.000 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,019] INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+[2023-09-18 13:10:34,019] Opt_design Change Summary
+[2023-09-18 13:10:34,019] =========================
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] -------------------------------------------------------------------------------------------------------------------------
+[2023-09-18 13:10:34,019] |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+[2023-09-18 13:10:34,019] -------------------------------------------------------------------------------------------------------------------------
+[2023-09-18 13:10:34,019] |  Retarget                     |               0  |               1  |                                              0  |
+[2023-09-18 13:10:34,019] |  Constant propagation         |               0  |               0  |                                              0  |
+[2023-09-18 13:10:34,019] |  Sweep                        |               0  |               0  |                                              0  |
+[2023-09-18 13:10:34,019] |  BUFG optimization            |               0  |               0  |                                              0  |
+[2023-09-18 13:10:34,019] |  Shift Register Optimization  |               0  |               0  |                                              0  |
+[2023-09-18 13:10:34,019] |  Post Processing Netlist      |               0  |               0  |                                              0  |
+[2023-09-18 13:10:34,019] -------------------------------------------------------------------------------------------------------------------------
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] Starting Connectivity Check Task
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2451.590 ; gain = 0.000 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,019] Ending Logic Optimization Task | Checksum: 16a0927e8
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2451.590 ; gain = 0.000 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] Starting Power Optimization Task
+[2023-09-18 13:10:34,019] INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+[2023-09-18 13:10:34,019] Ending Power Optimization Task | Checksum: 16a0927e8
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2451.590 ; gain = 0.000 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] Starting Final Cleanup Task
+[2023-09-18 13:10:34,019] Ending Final Cleanup Task | Checksum: 16a0927e8
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2451.590 ; gain = 0.000 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] Starting Netlist Obfuscation Task
+[2023-09-18 13:10:34,019] Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2451.590 ; gain = 0.000 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,019] Ending Netlist Obfuscation Task | Checksum: 16a0927e8
+[2023-09-18 13:10:34,019] 
+[2023-09-18 13:10:34,019] Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2451.590 ; gain = 0.000 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,019] INFO: [Common 17-83] Releasing license: Implementation
+[2023-09-18 13:10:34,019] 24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+[2023-09-18 13:10:34,019] opt_design completed successfully
+[2023-09-18 13:10:34,019] opt_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2451.590 ; gain = 683.344 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,019] Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2451.590 ; gain = 0.000 ; free physical = 4159 ; free virtual = 136029
+[2023-09-18 13:10:34,019] INFO: [Timing 38-35] Done setting XDC timing constraints.
+[2023-09-18 13:10:34,019] INFO: [Timing 38-480] Writing timing data to binary archive.
+[2023-09-18 13:10:34,020] INFO: [Common 17-1381] The checkpoint '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/vivadocompile/vivadocompile.runs/impl_1/finn_design_wrapper_opt.dcp' has been generated.
+[2023-09-18 13:10:34,020] INFO: [runtcl-4] Executing : report_drc -file finn_design_wrapper_drc_opted.rpt -pb finn_design_wrapper_drc_opted.pb -rpx finn_design_wrapper_drc_opted.rpx
+[2023-09-18 13:10:34,020] Command: report_drc -file finn_design_wrapper_drc_opted.rpt -pb finn_design_wrapper_drc_opted.pb -rpx finn_design_wrapper_drc_opted.rpx
+[2023-09-18 13:10:34,020] INFO: [IP_Flow 19-234] Refreshing IP repositories
+[2023-09-18 13:10:34,020] INFO: [IP_Flow 19-1704] No user IP repositories specified
+[2023-09-18 13:10:34,020] INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/storage/shared/programs/xilinx/Vivado/2019.1/data/ip'.
+[2023-09-18 13:10:34,020] INFO: [DRC 23-27] Running DRC with 8 threads
+[2023-09-18 13:10:34,020] INFO: [Coretcl 2-168] The results of DRC are in file /tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/vivadocompile/vivadocompile.runs/impl_1/finn_design_wrapper_drc_opted.rpt.
+[2023-09-18 13:10:34,020] report_drc completed successfully
+[2023-09-18 13:10:34,020] Command: place_design
+[2023-09-18 13:10:34,020] Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+[2023-09-18 13:10:34,020] INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+[2023-09-18 13:10:34,020] INFO: [DRC 23-27] Running DRC with 8 threads
+[2023-09-18 13:10:34,020] INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+[2023-09-18 13:10:34,020] INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+[2023-09-18 13:10:34,020] Running DRC as a precondition to command place_design
+[2023-09-18 13:10:34,020] INFO: [DRC 23-27] Running DRC with 8 threads
+[2023-09-18 13:10:34,020] INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+[2023-09-18 13:10:34,020] INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Starting Placer Task
+[2023-09-18 13:10:34,020] INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Phase 1 Placer Initialization
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Phase 1.1 Placer Initialization Netlist Sorting
+[2023-09-18 13:10:34,020] Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2586.996 ; gain = 0.000 ; free physical = 4131 ; free virtual = 136002
+[2023-09-18 13:10:34,020] Phase 1.1 Placer Initialization Netlist Sorting | Checksum: f19fd44b
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2586.996 ; gain = 0.000 ; free physical = 4131 ; free virtual = 136002
+[2023-09-18 13:10:34,020] Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2586.996 ; gain = 0.000 ; free physical = 4131 ; free virtual = 136002
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[2023-09-18 13:10:34,020] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 3ba797dc
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Time (s): cpu = 00:00:00.52 ; elapsed = 00:00:00.36 . Memory (MB): peak = 2611.008 ; gain = 24.012 ; free physical = 4111 ; free virtual = 135982
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Phase 1.3 Build Placer Netlist Model
+[2023-09-18 13:10:34,020] Phase 1.3 Build Placer Netlist Model | Checksum: 4be38d34
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.59 . Memory (MB): peak = 2650.051 ; gain = 63.055 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Phase 1.4 Constrain Clocks/Macros
+[2023-09-18 13:10:34,020] Phase 1.4 Constrain Clocks/Macros | Checksum: 4be38d34
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.59 . Memory (MB): peak = 2650.051 ; gain = 63.055 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,020] Phase 1 Placer Initialization | Checksum: 4be38d34
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.60 . Memory (MB): peak = 2650.051 ; gain = 63.055 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Phase 2 Global Placement
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Phase 2.1 Floorplanning
+[2023-09-18 13:10:34,020] Phase 2.1 Floorplanning | Checksum: 566b4062
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,020] Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.84 . Memory (MB): peak = 2650.051 ; gain = 63.055 ; free physical = 4098 ; free virtual = 135969
+[2023-09-18 13:10:34,020] 
+[2023-09-18 13:10:34,021] Phase 2.2 Global Placement Core
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Phase 2.2.1 Physical Synthesis In Placer
+[2023-09-18 13:10:34,021] INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+[2023-09-18 13:10:34,021] INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+[2023-09-18 13:10:34,021] INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+[2023-09-18 13:10:34,021] INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+[2023-09-18 13:10:34,021] INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+[2023-09-18 13:10:34,021] INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+[2023-09-18 13:10:34,021] INFO: [Physopt 32-949] No candidate nets found for HD net replication
+[2023-09-18 13:10:34,021] INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+[2023-09-18 13:10:34,021] Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2658.055 ; gain = 0.000 ; free physical = 4112 ; free virtual = 135984
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Summary of Physical Synthesis Optimizations
+[2023-09-18 13:10:34,021] ============================================
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] ----------------------------------------------------------------------------------------------------------------------------------------
+[2023-09-18 13:10:34,021] |  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+[2023-09-18 13:10:34,021] ----------------------------------------------------------------------------------------------------------------------------------------
+[2023-09-18 13:10:34,021] |  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+[2023-09-18 13:10:34,021] |  DSP Register                  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+[2023-09-18 13:10:34,021] |  Shift Register                |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+[2023-09-18 13:10:34,021] |  BRAM Register                 |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+[2023-09-18 13:10:34,021] |  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+[2023-09-18 13:10:34,021] |  Total                         |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+[2023-09-18 13:10:34,021] ----------------------------------------------------------------------------------------------------------------------------------------
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1303bf298
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Time (s): cpu = 00:00:22 ; elapsed = 00:00:04 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4112 ; free virtual = 135984
+[2023-09-18 13:10:34,021] Phase 2.2 Global Placement Core | Checksum: bca6a12b
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Time (s): cpu = 00:00:25 ; elapsed = 00:00:05 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4112 ; free virtual = 135984
+[2023-09-18 13:10:34,021] Phase 2 Global Placement | Checksum: bca6a12b
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Time (s): cpu = 00:00:25 ; elapsed = 00:00:05 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4112 ; free virtual = 135984
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Phase 3 Detail Placement
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Phase 3.1 Commit Multi Column Macros
+[2023-09-18 13:10:34,021] Phase 3.1 Commit Multi Column Macros | Checksum: c955daf9
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Time (s): cpu = 00:00:25 ; elapsed = 00:00:05 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4112 ; free virtual = 135984
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Phase 3.2 Commit Most Macros & LUTRAMs
+[2023-09-18 13:10:34,021] Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: a5a8552c
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Time (s): cpu = 00:00:26 ; elapsed = 00:00:05 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4112 ; free virtual = 135984
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Phase 3.3 Area Swap Optimization
+[2023-09-18 13:10:34,021] Phase 3.3 Area Swap Optimization | Checksum: 1074a891e
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Time (s): cpu = 00:00:26 ; elapsed = 00:00:05 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4112 ; free virtual = 135984
+[2023-09-18 13:10:34,021] 
+[2023-09-18 13:10:34,021] Phase 3.4 Pipeline Register Optimization
+[2023-09-18 13:10:34,022] Phase 3.4 Pipeline Register Optimization | Checksum: c3a7a489
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Time (s): cpu = 00:00:26 ; elapsed = 00:00:05 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4112 ; free virtual = 135984
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Phase 3.5 Small Shape Detail Placement
+[2023-09-18 13:10:34,022] Phase 3.5 Small Shape Detail Placement | Checksum: 16836d0aa
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Time (s): cpu = 00:00:27 ; elapsed = 00:00:05 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Phase 3.6 Re-assign LUT pins
+[2023-09-18 13:10:34,022] Phase 3.6 Re-assign LUT pins | Checksum: bb675c3d
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Time (s): cpu = 00:00:27 ; elapsed = 00:00:05 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Phase 3.7 Pipeline Register Optimization
+[2023-09-18 13:10:34,022] Phase 3.7 Pipeline Register Optimization | Checksum: 9fd94d36
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Time (s): cpu = 00:00:27 ; elapsed = 00:00:05 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,022] Phase 3 Detail Placement | Checksum: 9fd94d36
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Time (s): cpu = 00:00:27 ; elapsed = 00:00:05 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Phase 4 Post Placement Optimization and Clean-Up
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Phase 4.1 Post Commit Optimization
+[2023-09-18 13:10:34,022] INFO: [Timing 38-35] Done setting XDC timing constraints.
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Phase 4.1.1 Post Placement Optimization
+[2023-09-18 13:10:34,022] Post Placement Optimization Initialization | Checksum: 12c6ea085
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Phase 4.1.1.1 BUFG Insertion
+[2023-09-18 13:10:34,022] INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+[2023-09-18 13:10:34,022] Phase 4.1.1.1 BUFG Insertion | Checksum: 12c6ea085
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Time (s): cpu = 00:00:27 ; elapsed = 00:00:05 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,022] INFO: [Place 30-746] Post Placement Timing Summary WNS=4.335. For the most accurate timing information please run report_timing.
+[2023-09-18 13:10:34,022] Phase 4.1.1 Post Placement Optimization | Checksum: 10faec1f3
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Time (s): cpu = 00:00:27 ; elapsed = 00:00:05 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,022] Phase 4.1 Post Commit Optimization | Checksum: 10faec1f3
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Time (s): cpu = 00:00:27 ; elapsed = 00:00:05 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Phase 4.2 Post Placement Cleanup
+[2023-09-18 13:10:34,022] Phase 4.2 Post Placement Cleanup | Checksum: 10faec1f3
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Time (s): cpu = 00:00:27 ; elapsed = 00:00:06 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Phase 4.3 Placer Reporting
+[2023-09-18 13:10:34,022] Phase 4.3 Placer Reporting | Checksum: 10faec1f3
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,022] Time (s): cpu = 00:00:27 ; elapsed = 00:00:06 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,022] 
+[2023-09-18 13:10:34,023] Phase 4.4 Final Placement Cleanup
+[2023-09-18 13:10:34,023] Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2658.055 ; gain = 0.000 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,023] Phase 4.4 Final Placement Cleanup | Checksum: 1c5a6fe62
+[2023-09-18 13:10:34,023] 
+[2023-09-18 13:10:34,023] Time (s): cpu = 00:00:27 ; elapsed = 00:00:06 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,023] Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1c5a6fe62
+[2023-09-18 13:10:34,023] 
+[2023-09-18 13:10:34,023] Time (s): cpu = 00:00:27 ; elapsed = 00:00:06 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,023] Ending Placer Task | Checksum: fc9dc457
+[2023-09-18 13:10:34,023] 
+[2023-09-18 13:10:34,023] Time (s): cpu = 00:00:27 ; elapsed = 00:00:06 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4103 ; free virtual = 135974
+[2023-09-18 13:10:34,023] INFO: [Common 17-83] Releasing license: Implementation
+[2023-09-18 13:10:34,023] 53 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+[2023-09-18 13:10:34,023] place_design completed successfully
+[2023-09-18 13:10:34,023] place_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:06 . Memory (MB): peak = 2658.055 ; gain = 71.059 ; free physical = 4133 ; free virtual = 136004
+[2023-09-18 13:10:34,023] Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2658.055 ; gain = 0.000 ; free physical = 4133 ; free virtual = 136004
+[2023-09-18 13:10:34,023] INFO: [Timing 38-480] Writing timing data to binary archive.
+[2023-09-18 13:10:34,023] Writing placer database...
+[2023-09-18 13:10:34,023] Writing XDEF routing.
+[2023-09-18 13:10:34,023] Writing XDEF routing logical nets.
+[2023-09-18 13:10:34,023] Writing XDEF routing special nets.
+[2023-09-18 13:10:34,023] Write XDEF Complete: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2658.055 ; gain = 0.000 ; free physical = 4131 ; free virtual = 136005
+[2023-09-18 13:10:34,023] INFO: [Common 17-1381] The checkpoint '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/vivadocompile/vivadocompile.runs/impl_1/finn_design_wrapper_placed.dcp' has been generated.
+[2023-09-18 13:10:34,023] INFO: [runtcl-4] Executing : report_io -file finn_design_wrapper_io_placed.rpt
+[2023-09-18 13:10:34,023] report_io: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2658.055 ; gain = 0.000 ; free physical = 4146 ; free virtual = 136018
+[2023-09-18 13:10:34,023] INFO: [runtcl-4] Executing : report_utilization -file finn_design_wrapper_utilization_placed.rpt -pb finn_design_wrapper_utilization_placed.pb
+[2023-09-18 13:10:34,023] INFO: [runtcl-4] Executing : report_control_sets -verbose -file finn_design_wrapper_control_sets_placed.rpt
+[2023-09-18 13:10:34,023] report_control_sets: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2658.055 ; gain = 0.000 ; free physical = 4136 ; free virtual = 136007
+[2023-09-18 13:10:34,023] Command: route_design
+[2023-09-18 13:10:34,023] Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+[2023-09-18 13:10:34,023] INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+[2023-09-18 13:10:34,023] Running DRC as a precondition to command route_design
+[2023-09-18 13:10:34,023] INFO: [DRC 23-27] Running DRC with 8 threads
+[2023-09-18 13:10:34,023] INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+[2023-09-18 13:10:34,023] INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+[2023-09-18 13:10:34,023] 
+[2023-09-18 13:10:34,023] 
+[2023-09-18 13:10:34,023] Starting Routing Task
+[2023-09-18 13:10:34,023] INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+[2023-09-18 13:10:34,023] Checksum: PlaceDB: afdf00c ConstDB: 0 ShapeSum: f19fd44b RouteDB: 0
+[2023-09-18 13:10:34,023] 
+[2023-09-18 13:10:34,023] Phase 1 Build RT Design
+[2023-09-18 13:10:34,023] WARNING: [Route 35-197] Clock port "ap_clk" does not have an associated HD.CLK_SRC. Without this constraint, timing analysis may not be accurate and upstream checks cannot be done to ensure correct clock placement.
+[2023-09-18 13:10:34,023] WARNING: [Route 35-198] Port "ap_rst_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+[2023-09-18 13:10:34,023] WARNING: [Route 35-198] Port "s_axis_0_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axis_0_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+[2023-09-18 13:10:34,023] WARNING: [Route 35-198] Port "m_axis_0_tready" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "m_axis_0_tready". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+[2023-09-18 13:10:34,023] Phase 1 Build RT Design | Checksum: 67c3bec5
+[2023-09-18 13:10:34,023] 
+[2023-09-18 13:10:34,023] Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2765.723 ; gain = 82.949 ; free physical = 3894 ; free virtual = 135766
+[2023-09-18 13:10:34,023] Post Restoration Checksum: NetGraph: 226a6219 NumContArr: 45595cac Constraints: 0 Timing: 0
+[2023-09-18 13:10:34,023] 
+[2023-09-18 13:10:34,023] Phase 2 Router Initialization
+[2023-09-18 13:10:34,023] 
+[2023-09-18 13:10:34,023] Phase 2.1 Create Timer
+[2023-09-18 13:10:34,023] Phase 2.1 Create Timer | Checksum: 67c3bec5
+[2023-09-18 13:10:34,023] 
+[2023-09-18 13:10:34,024] Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2812.531 ; gain = 129.758 ; free physical = 3882 ; free virtual = 135755
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Phase 2.2 Fix Topology Constraints
+[2023-09-18 13:10:34,024] Phase 2.2 Fix Topology Constraints | Checksum: 67c3bec5
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2828.531 ; gain = 145.758 ; free physical = 3846 ; free virtual = 135718
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Phase 2.3 Pre Route Cleanup
+[2023-09-18 13:10:34,024] Phase 2.3 Pre Route Cleanup | Checksum: 67c3bec5
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2828.531 ; gain = 145.758 ; free physical = 3846 ; free virtual = 135718
+[2023-09-18 13:10:34,024]  Number of Nodes with overlaps = 0
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Phase 2.4 Update Timing
+[2023-09-18 13:10:34,024] Phase 2.4 Update Timing | Checksum: 6ba0e0a1
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 2844.047 ; gain = 161.273 ; free physical = 3830 ; free virtual = 135702
+[2023-09-18 13:10:34,024] INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.590  | TNS=0.000  | WHS=0.082  | THS=0.000  |
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Phase 2 Router Initialization | Checksum: abb341da
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 2844.047 ; gain = 161.273 ; free physical = 3827 ; free virtual = 135699
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Router Utilization Summary
+[2023-09-18 13:10:34,024]   Global Vertical Routing Utilization    = 0 %
+[2023-09-18 13:10:34,024]   Global Horizontal Routing Utilization  = 0 %
+[2023-09-18 13:10:34,024]   Routable Net Status*
+[2023-09-18 13:10:34,024]   *Does not include unroutable nets such as driverless and loadless.
+[2023-09-18 13:10:34,024]   Run report_route_status for detailed report.
+[2023-09-18 13:10:34,024]   Number of Failed Nets               = 1750
+[2023-09-18 13:10:34,024]     (Failed Nets is the sum of unrouted and partially routed nets)
+[2023-09-18 13:10:34,024]   Number of Unrouted Nets             = 1750
+[2023-09-18 13:10:34,024]   Number of Partially Routed Nets     = 0
+[2023-09-18 13:10:34,024]   Number of Node Overlaps             = 0
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Phase 3 Initial Routing
+[2023-09-18 13:10:34,024] Phase 3 Initial Routing | Checksum: 12ac21ef8
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3809 ; free virtual = 135681
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Phase 4 Rip-up And Reroute
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Phase 4.1 Global Iteration 0
+[2023-09-18 13:10:34,024]  Number of Nodes with overlaps = 80
+[2023-09-18 13:10:34,024]  Number of Nodes with overlaps = 2
+[2023-09-18 13:10:34,024]  Number of Nodes with overlaps = 0
+[2023-09-18 13:10:34,024] INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.169  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Phase 4.1 Global Iteration 0 | Checksum: 12dbab7b7
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3808 ; free virtual = 135681
+[2023-09-18 13:10:34,024] Phase 4 Rip-up And Reroute | Checksum: 12dbab7b7
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3808 ; free virtual = 135681
+[2023-09-18 13:10:34,024] 
+[2023-09-18 13:10:34,024] Phase 5 Delay and Skew Optimization
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Phase 5.1 Delay CleanUp
+[2023-09-18 13:10:34,025] Phase 5.1 Delay CleanUp | Checksum: 12dbab7b7
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3808 ; free virtual = 135681
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Phase 5.2 Clock Skew Optimization
+[2023-09-18 13:10:34,025] Phase 5.2 Clock Skew Optimization | Checksum: 12dbab7b7
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3808 ; free virtual = 135681
+[2023-09-18 13:10:34,025] Phase 5 Delay and Skew Optimization | Checksum: 12dbab7b7
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3808 ; free virtual = 135681
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Phase 6 Post Hold Fix
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Phase 6.1 Hold Fix Iter
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Phase 6.1.1 Update Timing
+[2023-09-18 13:10:34,025] Phase 6.1.1 Update Timing | Checksum: 11f2db061
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3808 ; free virtual = 135681
+[2023-09-18 13:10:34,025] INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.169  | TNS=0.000  | WHS=0.108  | THS=0.000  |
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Phase 6.1 Hold Fix Iter | Checksum: 11f2db061
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3808 ; free virtual = 135681
+[2023-09-18 13:10:34,025] Phase 6 Post Hold Fix | Checksum: 11f2db061
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3808 ; free virtual = 135681
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Phase 7 Route finalize
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Router Utilization Summary
+[2023-09-18 13:10:34,025]   Global Vertical Routing Utilization    = 0.0580626 %
+[2023-09-18 13:10:34,025]   Global Horizontal Routing Utilization  = 0.0570059 %
+[2023-09-18 13:10:34,025]   Routable Net Status*
+[2023-09-18 13:10:34,025]   *Does not include unroutable nets such as driverless and loadless.
+[2023-09-18 13:10:34,025]   Run report_route_status for detailed report.
+[2023-09-18 13:10:34,025]   Number of Failed Nets               = 0
+[2023-09-18 13:10:34,025]     (Failed Nets is the sum of unrouted and partially routed nets)
+[2023-09-18 13:10:34,025]   Number of Unrouted Nets             = 0
+[2023-09-18 13:10:34,025]   Number of Partially Routed Nets     = 0
+[2023-09-18 13:10:34,025]   Number of Node Overlaps             = 0
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Phase 7 Route finalize | Checksum: 1fdb4ce98
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3808 ; free virtual = 135680
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Phase 8 Verifying routed nets
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025]  Verification completed successfully
+[2023-09-18 13:10:34,025] Phase 8 Verifying routed nets | Checksum: 1fdb4ce98
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,025] Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3808 ; free virtual = 135680
+[2023-09-18 13:10:34,025] 
+[2023-09-18 13:10:34,026] Phase 9 Depositing Routes
+[2023-09-18 13:10:34,026] Phase 9 Depositing Routes | Checksum: 214ea9415
+[2023-09-18 13:10:34,026] 
+[2023-09-18 13:10:34,026] Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3808 ; free virtual = 135680
+[2023-09-18 13:10:34,026] 
+[2023-09-18 13:10:34,026] Phase 10 Post Router Timing
+[2023-09-18 13:10:34,026] INFO: [Route 35-57] Estimated Timing Summary | WNS=4.169  | TNS=0.000  | WHS=0.108  | THS=0.000  |
+[2023-09-18 13:10:34,026] 
+[2023-09-18 13:10:34,026] INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+[2023-09-18 13:10:34,026] Phase 10 Post Router Timing | Checksum: 214ea9415
+[2023-09-18 13:10:34,026] 
+[2023-09-18 13:10:34,026] Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3808 ; free virtual = 135680
+[2023-09-18 13:10:34,026] INFO: [Route 35-16] Router Completed Successfully
+[2023-09-18 13:10:34,026] 
+[2023-09-18 13:10:34,026] Time (s): cpu = 00:00:34 ; elapsed = 00:00:27 . Memory (MB): peak = 2848.219 ; gain = 165.445 ; free physical = 3850 ; free virtual = 135722
+[2023-09-18 13:10:34,026] 
+[2023-09-18 13:10:34,026] Routing Is Done.
+[2023-09-18 13:10:34,026] INFO: [Common 17-83] Releasing license: Implementation
+[2023-09-18 13:10:34,026] 70 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+[2023-09-18 13:10:34,026] route_design completed successfully
+[2023-09-18 13:10:34,026] route_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:28 . Memory (MB): peak = 2848.219 ; gain = 190.164 ; free physical = 3850 ; free virtual = 135722
+[2023-09-18 13:10:34,026] Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2848.219 ; gain = 0.000 ; free physical = 3850 ; free virtual = 135722
+[2023-09-18 13:10:34,026] INFO: [Timing 38-480] Writing timing data to binary archive.
+[2023-09-18 13:10:34,026] Writing placer database...
+[2023-09-18 13:10:34,026] Writing XDEF routing.
+[2023-09-18 13:10:34,026] Writing XDEF routing logical nets.
+[2023-09-18 13:10:34,026] Writing XDEF routing special nets.
+[2023-09-18 13:10:34,026] Write XDEF Complete: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2848.219 ; gain = 0.000 ; free physical = 3848 ; free virtual = 135724
+[2023-09-18 13:10:34,026] INFO: [Common 17-1381] The checkpoint '/tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/vivadocompile/vivadocompile.runs/impl_1/finn_design_wrapper_routed.dcp' has been generated.
+[2023-09-18 13:10:34,026] INFO: [runtcl-4] Executing : report_drc -file finn_design_wrapper_drc_routed.rpt -pb finn_design_wrapper_drc_routed.pb -rpx finn_design_wrapper_drc_routed.rpx
+[2023-09-18 13:10:34,026] Command: report_drc -file finn_design_wrapper_drc_routed.rpt -pb finn_design_wrapper_drc_routed.pb -rpx finn_design_wrapper_drc_routed.rpx
+[2023-09-18 13:10:34,026] INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+[2023-09-18 13:10:34,026] INFO: [DRC 23-27] Running DRC with 8 threads
+[2023-09-18 13:10:34,026] INFO: [Coretcl 2-168] The results of DRC are in file /tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/vivadocompile/vivadocompile.runs/impl_1/finn_design_wrapper_drc_routed.rpt.
+[2023-09-18 13:10:34,026] report_drc completed successfully
+[2023-09-18 13:10:34,026] INFO: [runtcl-4] Executing : report_methodology -file finn_design_wrapper_methodology_drc_routed.rpt -pb finn_design_wrapper_methodology_drc_routed.pb -rpx finn_design_wrapper_methodology_drc_routed.rpx
+[2023-09-18 13:10:34,026] Command: report_methodology -file finn_design_wrapper_methodology_drc_routed.rpt -pb finn_design_wrapper_methodology_drc_routed.pb -rpx finn_design_wrapper_methodology_drc_routed.rpx
+[2023-09-18 13:10:34,026] INFO: [Timing 38-35] Done setting XDC timing constraints.
+[2023-09-18 13:10:34,026] WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+[2023-09-18 13:10:34,026] Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+[2023-09-18 13:10:34,026] INFO: [DRC 23-133] Running Methodology with 8 threads
+[2023-09-18 13:10:34,026] INFO: [Coretcl 2-1520] The results of Report Methodology are in file /tmp/finn_dev_jokar/synth_out_of_context_d282lvuz/results_finn_design_wrapper/vivadocompile/vivadocompile.runs/impl_1/finn_design_wrapper_methodology_drc_routed.rpt.
+[2023-09-18 13:10:34,026] report_methodology completed successfully
+[2023-09-18 13:10:34,026] INFO: [runtcl-4] Executing : report_power -file finn_design_wrapper_power_routed.rpt -pb finn_design_wrapper_power_summary_routed.pb -rpx finn_design_wrapper_power_routed.rpx
+[2023-09-18 13:10:34,026] Command: report_power -file finn_design_wrapper_power_routed.rpt -pb finn_design_wrapper_power_summary_routed.pb -rpx finn_design_wrapper_power_routed.rpx
+[2023-09-18 13:10:34,026] INFO: [Timing 38-35] Done setting XDC timing constraints.
+[2023-09-18 13:10:34,026] Running Vector-less Activity Propagation...
+[2023-09-18 13:10:34,026] 
+[2023-09-18 13:10:34,026] Finished Running Vector-less Activity Propagation
+[2023-09-18 13:10:34,026] 82 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+[2023-09-18 13:10:34,026] report_power completed successfully
+[2023-09-18 13:10:34,026] INFO: [runtcl-4] Executing : report_route_status -file finn_design_wrapper_route_status.rpt -pb finn_design_wrapper_route_status.pb
+[2023-09-18 13:10:34,026] INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file finn_design_wrapper_timing_summary_routed.rpt -pb finn_design_wrapper_timing_summary_routed.pb -rpx finn_design_wrapper_timing_summary_routed.rpx -warn_on_violation
+[2023-09-18 13:10:34,026] INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+[2023-09-18 13:10:34,027] INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+[2023-09-18 13:10:34,027] INFO: [runtcl-4] Executing : report_incremental_reuse -file finn_design_wrapper_incremental_reuse_routed.rpt
+[2023-09-18 13:10:34,027] INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+[2023-09-18 13:10:34,027] INFO: [runtcl-4] Executing : report_clock_utilization -file finn_design_wrapper_clock_utilization_routed.rpt
+[2023-09-18 13:10:34,027] INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file finn_design_wrapper_bus_skew_routed.rpt -pb finn_design_wrapper_bus_skew_routed.pb -rpx finn_design_wrapper_bus_skew_routed.rpx
+[2023-09-18 13:10:34,027] INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+[2023-09-18 13:10:34,027] INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+[2023-09-18 13:10:34,027] INFO: [Common 17-206] Exiting Vivado at Mon Sep 18 13:10:23 2023...
+[2023-09-18 13:10:34,027] [Mon Sep 18 13:10:23 2023] impl_1 finished
+[2023-09-18 13:10:34,027] wait_on_run: Time (s): cpu = 00:03:17 ; elapsed = 00:03:04 . Memory (MB): peak = 1434.625 ; gain = 0.000 ; free physical = 5390 ; free virtual = 137264
+[2023-09-18 13:10:34,027] # open_run impl_1
+[2023-09-18 13:10:34,027] INFO: [Device 21-403] Loading part xc7a200tfbg484-3
+[2023-09-18 13:10:34,027] INFO: [Netlist 29-17] Analyzing 199 Unisim elements for replacement
+[2023-09-18 13:10:34,027] INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+[2023-09-18 13:10:34,027] INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+[2023-09-18 13:10:34,027] INFO: [Project 1-570] Preparing netlist for logic optimization
+[2023-09-18 13:10:34,027] INFO: [Timing 38-478] Restoring timing data from binary archive.
+[2023-09-18 13:10:34,027] INFO: [Timing 38-479] Binary timing data restore complete.
+[2023-09-18 13:10:34,027] INFO: [Project 1-856] Restoring constraints from binary archive.
+[2023-09-18 13:10:34,027] INFO: [Project 1-853] Binary constraint restore complete.
+[2023-09-18 13:10:34,027] Reading XDEF placement.
+[2023-09-18 13:10:34,027] Reading placer database...
+[2023-09-18 13:10:34,027] Reading XDEF routing.
+[2023-09-18 13:10:34,027] Read XDEF File: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2341.477 ; gain = 5.938 ; free physical = 4548 ; free virtual = 136422
+[2023-09-18 13:10:34,027] Restored from archive | CPU: 0.210000 secs | Memory: 3.295486 MB |
+[2023-09-18 13:10:34,027] Finished XDEF File Restore: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2341.477 ; gain = 5.938 ; free physical = 4548 ; free virtual = 136422
+[2023-09-18 13:10:34,027] Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2341.477 ; gain = 0.000 ; free physical = 4548 ; free virtual = 136422
+[2023-09-18 13:10:34,027] INFO: [Project 1-111] Unisim Transformation Summary:
+[2023-09-18 13:10:34,027] No Unisim elements were transformed.
+[2023-09-18 13:10:34,027] 
+[2023-09-18 13:10:34,027] open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2341.477 ; gain = 906.852 ; free physical = 4548 ; free virtual = 136422
+[2023-09-18 13:10:34,027] # report_utilization
+[2023-09-18 13:10:34,027] Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+[2023-09-18 13:10:34,027] ------------------------------------------------------------------------------------
+[2023-09-18 13:10:34,027] | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+[2023-09-18 13:10:34,027] | Date         : Mon Sep 18 13:10:32 2023
+[2023-09-18 13:10:34,027] | Host         : finn_dev_jokar running 64-bit Ubuntu 18.04.6 LTS
+[2023-09-18 13:10:34,027] | Command      : report_utilization
+[2023-09-18 13:10:34,027] | Design       : finn_design_wrapper
+[2023-09-18 13:10:34,027] | Device       : 7a200tfbg484-3
+[2023-09-18 13:10:34,027] | Design State : Fully Placed
+[2023-09-18 13:10:34,027] ------------------------------------------------------------------------------------
+[2023-09-18 13:10:34,027] 
+[2023-09-18 13:10:34,027] Utilization Design Information
+[2023-09-18 13:10:34,027] 
+[2023-09-18 13:10:34,027] Table of Contents
+[2023-09-18 13:10:34,027] -----------------
+[2023-09-18 13:10:34,027] 1. Slice Logic
+[2023-09-18 13:10:34,027] 1.1 Summary of Registers by Type
+[2023-09-18 13:10:34,027] 2. Slice Logic Distribution
+[2023-09-18 13:10:34,027] 3. Memory
+[2023-09-18 13:10:34,027] 4. DSP
+[2023-09-18 13:10:34,027] 5. IO and GT Specific
+[2023-09-18 13:10:34,027] 6. Clocking
+[2023-09-18 13:10:34,027] 7. Specific Feature
+[2023-09-18 13:10:34,027] 8. Primitives
+[2023-09-18 13:10:34,027] 9. Black Boxes
+[2023-09-18 13:10:34,028] 10. Instantiated Netlists
+[2023-09-18 13:10:34,028] 
+[2023-09-18 13:10:34,028] 1. Slice Logic
+[2023-09-18 13:10:34,028] --------------
+[2023-09-18 13:10:34,028] 
+[2023-09-18 13:10:34,028] +-------------------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,028] |        Site Type        | Used | Fixed | Available | Util% |
+[2023-09-18 13:10:34,028] +-------------------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,028] | Slice LUTs              |  848 |     0 |    133800 |  0.63 |
+[2023-09-18 13:10:34,028] |   LUT as Logic          |  848 |     0 |    133800 |  0.63 |
+[2023-09-18 13:10:34,028] |   LUT as Memory         |    0 |     0 |     46200 |  0.00 |
+[2023-09-18 13:10:34,028] | Slice Registers         | 1003 |     0 |    267600 |  0.37 |
+[2023-09-18 13:10:34,028] |   Register as Flip Flop | 1003 |     0 |    267600 |  0.37 |
+[2023-09-18 13:10:34,028] |   Register as Latch     |    0 |     0 |    267600 |  0.00 |
+[2023-09-18 13:10:34,028] | F7 Muxes                |    0 |     0 |     66900 |  0.00 |
+[2023-09-18 13:10:34,028] | F8 Muxes                |    0 |     0 |     33450 |  0.00 |
+[2023-09-18 13:10:34,028] +-------------------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,028] 
+[2023-09-18 13:10:34,028] 
+[2023-09-18 13:10:34,028] 1.1 Summary of Registers by Type
+[2023-09-18 13:10:34,028] --------------------------------
+[2023-09-18 13:10:34,028] 
+[2023-09-18 13:10:34,028] +-------+--------------+-------------+--------------+
+[2023-09-18 13:10:34,028] | Total | Clock Enable | Synchronous | Asynchronous |
+[2023-09-18 13:10:34,028] +-------+--------------+-------------+--------------+
+[2023-09-18 13:10:34,028] | 0     |            _ |           - |            - |
+[2023-09-18 13:10:34,028] | 0     |            _ |           - |          Set |
+[2023-09-18 13:10:34,028] | 0     |            _ |           - |        Reset |
+[2023-09-18 13:10:34,028] | 0     |            _ |         Set |            - |
+[2023-09-18 13:10:34,028] | 0     |            _ |       Reset |            - |
+[2023-09-18 13:10:34,028] | 0     |          Yes |           - |            - |
+[2023-09-18 13:10:34,028] | 0     |          Yes |           - |          Set |
+[2023-09-18 13:10:34,028] | 0     |          Yes |           - |        Reset |
+[2023-09-18 13:10:34,028] | 30    |          Yes |         Set |            - |
+[2023-09-18 13:10:34,028] | 973   |          Yes |       Reset |            - |
+[2023-09-18 13:10:34,028] +-------+--------------+-------------+--------------+
+[2023-09-18 13:10:34,028] 
+[2023-09-18 13:10:34,028] 
+[2023-09-18 13:10:34,028] 2. Slice Logic Distribution
+[2023-09-18 13:10:34,028] ---------------------------
+[2023-09-18 13:10:34,028] 
+[2023-09-18 13:10:34,028] +--------------------------------------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,028] |                  Site Type                 | Used | Fixed | Available | Util% |
+[2023-09-18 13:10:34,028] +--------------------------------------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,028] | Slice                                      |  468 |     0 |     33450 |  1.40 |
+[2023-09-18 13:10:34,028] |   SLICEL                                   |  241 |     0 |           |       |
+[2023-09-18 13:10:34,028] |   SLICEM                                   |  227 |     0 |           |       |
+[2023-09-18 13:10:34,028] | LUT as Logic                               |  848 |     0 |    133800 |  0.63 |
+[2023-09-18 13:10:34,028] |   using O5 output only                     |    0 |       |           |       |
+[2023-09-18 13:10:34,028] |   using O6 output only                     |  833 |       |           |       |
+[2023-09-18 13:10:34,028] |   using O5 and O6                          |   15 |       |           |       |
+[2023-09-18 13:10:34,028] | LUT as Memory                              |    0 |     0 |     46200 |  0.00 |
+[2023-09-18 13:10:34,028] |   LUT as Distributed RAM                   |    0 |     0 |           |       |
+[2023-09-18 13:10:34,028] |   LUT as Shift Register                    |    0 |     0 |           |       |
+[2023-09-18 13:10:34,028] | Slice Registers                            | 1003 |     0 |    267600 |  0.37 |
+[2023-09-18 13:10:34,028] |   Register driven from within the Slice    |  967 |       |           |       |
+[2023-09-18 13:10:34,028] |   Register driven from outside the Slice   |   36 |       |           |       |
+[2023-09-18 13:10:34,029] |     LUT in front of the register is unused |    4 |       |           |       |
+[2023-09-18 13:10:34,029] |     LUT in front of the register is used   |   32 |       |           |       |
+[2023-09-18 13:10:34,029] | Unique Control Sets                        |   40 |       |     33450 |  0.12 |
+[2023-09-18 13:10:34,029] +--------------------------------------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,029] * Note: Available Control Sets calculated as Slice Registers / 8, Review the Control Sets Report for more information regarding control sets.
+[2023-09-18 13:10:34,029] 
+[2023-09-18 13:10:34,029] 
+[2023-09-18 13:10:34,029] 3. Memory
+[2023-09-18 13:10:34,029] ---------
+[2023-09-18 13:10:34,029] 
+[2023-09-18 13:10:34,029] +----------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,029] |    Site Type   | Used | Fixed | Available | Util% |
+[2023-09-18 13:10:34,029] +----------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,029] | Block RAM Tile |    0 |     0 |       365 |  0.00 |
+[2023-09-18 13:10:34,029] |   RAMB36/FIFO* |    0 |     0 |       365 |  0.00 |
+[2023-09-18 13:10:34,029] |   RAMB18       |    0 |     0 |       730 |  0.00 |
+[2023-09-18 13:10:34,029] +----------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,029] * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+[2023-09-18 13:10:34,029] 
+[2023-09-18 13:10:34,029] 
+[2023-09-18 13:10:34,029] 4. DSP
+[2023-09-18 13:10:34,029] ------
+[2023-09-18 13:10:34,029] 
+[2023-09-18 13:10:34,029] +-----------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,029] | Site Type | Used | Fixed | Available | Util% |
+[2023-09-18 13:10:34,029] +-----------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,029] | DSPs      |    0 |     0 |       740 |  0.00 |
+[2023-09-18 13:10:34,029] +-----------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,029] 
+[2023-09-18 13:10:34,029] 
+[2023-09-18 13:10:34,029] 5. IO and GT Specific
+[2023-09-18 13:10:34,029] ---------------------
+[2023-09-18 13:10:34,029] 
+[2023-09-18 13:10:34,029] +-----------------------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,029] |          Site Type          | Used | Fixed | Available | Util% |
+[2023-09-18 13:10:34,029] +-----------------------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,029] | Bonded IOB                  |    0 |     0 |       285 |  0.00 |
+[2023-09-18 13:10:34,029] | Bonded IPADs                |    0 |     0 |        14 |  0.00 |
+[2023-09-18 13:10:34,029] | Bonded OPADs                |    0 |     0 |         8 |  0.00 |
+[2023-09-18 13:10:34,029] | PHY_CONTROL                 |    0 |     0 |        10 |  0.00 |
+[2023-09-18 13:10:34,029] | PHASER_REF                  |    0 |     0 |        10 |  0.00 |
+[2023-09-18 13:10:34,029] | OUT_FIFO                    |    0 |     0 |        40 |  0.00 |
+[2023-09-18 13:10:34,029] | IN_FIFO                     |    0 |     0 |        40 |  0.00 |
+[2023-09-18 13:10:34,029] | IDELAYCTRL                  |    0 |     0 |        10 |  0.00 |
+[2023-09-18 13:10:34,029] | IBUFDS                      |    0 |     0 |       274 |  0.00 |
+[2023-09-18 13:10:34,029] | GTPE2_CHANNEL               |    0 |     0 |         4 |  0.00 |
+[2023-09-18 13:10:34,029] | PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        40 |  0.00 |
+[2023-09-18 13:10:34,029] | PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        40 |  0.00 |
+[2023-09-18 13:10:34,029] | IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       500 |  0.00 |
+[2023-09-18 13:10:34,029] | IBUFDS_GTE2                 |    0 |     0 |         2 |  0.00 |
+[2023-09-18 13:10:34,029] | ILOGIC                      |    0 |     0 |       285 |  0.00 |
+[2023-09-18 13:10:34,029] | OLOGIC                      |    0 |     0 |       285 |  0.00 |
+[2023-09-18 13:10:34,029] +-----------------------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,029] 
+[2023-09-18 13:10:34,029] 
+[2023-09-18 13:10:34,029] 6. Clocking
+[2023-09-18 13:10:34,029] -----------
+[2023-09-18 13:10:34,030] 
+[2023-09-18 13:10:34,030] +------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,030] |  Site Type | Used | Fixed | Available | Util% |
+[2023-09-18 13:10:34,030] +------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,030] | BUFGCTRL   |    0 |     0 |        32 |  0.00 |
+[2023-09-18 13:10:34,030] | BUFIO      |    0 |     0 |        40 |  0.00 |
+[2023-09-18 13:10:34,030] | MMCME2_ADV |    0 |     0 |        10 |  0.00 |
+[2023-09-18 13:10:34,030] | PLLE2_ADV  |    0 |     0 |        10 |  0.00 |
+[2023-09-18 13:10:34,030] | BUFMRCE    |    0 |     0 |        20 |  0.00 |
+[2023-09-18 13:10:34,030] | BUFHCE     |    0 |     0 |       120 |  0.00 |
+[2023-09-18 13:10:34,030] | BUFR       |    0 |     0 |        40 |  0.00 |
+[2023-09-18 13:10:34,030] +------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,030] 
+[2023-09-18 13:10:34,030] 
+[2023-09-18 13:10:34,030] 7. Specific Feature
+[2023-09-18 13:10:34,030] -------------------
+[2023-09-18 13:10:34,030] 
+[2023-09-18 13:10:34,030] +-------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,030] |  Site Type  | Used | Fixed | Available | Util% |
+[2023-09-18 13:10:34,030] +-------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,030] | BSCANE2     |    0 |     0 |         4 |  0.00 |
+[2023-09-18 13:10:34,030] | CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+[2023-09-18 13:10:34,030] | DNA_PORT    |    0 |     0 |         1 |  0.00 |
+[2023-09-18 13:10:34,030] | EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+[2023-09-18 13:10:34,030] | FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+[2023-09-18 13:10:34,030] | ICAPE2      |    0 |     0 |         2 |  0.00 |
+[2023-09-18 13:10:34,030] | PCIE_2_1    |    0 |     0 |         1 |  0.00 |
+[2023-09-18 13:10:34,030] | STARTUPE2   |    0 |     0 |         1 |  0.00 |
+[2023-09-18 13:10:34,030] | XADC        |    0 |     0 |         1 |  0.00 |
+[2023-09-18 13:10:34,030] +-------------+------+-------+-----------+-------+
+[2023-09-18 13:10:34,030] 
+[2023-09-18 13:10:34,030] 
+[2023-09-18 13:10:34,030] 8. Primitives
+[2023-09-18 13:10:34,030] -------------
+[2023-09-18 13:10:34,030] 
+[2023-09-18 13:10:34,030] +----------+------+---------------------+
+[2023-09-18 13:10:34,030] | Ref Name | Used | Functional Category |
+[2023-09-18 13:10:34,030] +----------+------+---------------------+
+[2023-09-18 13:10:34,030] | FDRE     |  973 |        Flop & Latch |
+[2023-09-18 13:10:34,030] | CARRY4   |  199 |          CarryLogic |
+[2023-09-18 13:10:34,030] | LUT6     |  198 |                 LUT |
+[2023-09-18 13:10:34,030] | LUT4     |  198 |                 LUT |
+[2023-09-18 13:10:34,030] | LUT5     |  162 |                 LUT |
+[2023-09-18 13:10:34,030] | LUT2     |  153 |                 LUT |
+[2023-09-18 13:10:34,030] | LUT3     |  123 |                 LUT |
+[2023-09-18 13:10:34,030] | FDSE     |   30 |        Flop & Latch |
+[2023-09-18 13:10:34,030] | LUT1     |   29 |                 LUT |
+[2023-09-18 13:10:34,030] +----------+------+---------------------+
+[2023-09-18 13:10:34,030] 
+[2023-09-18 13:10:34,030] 
+[2023-09-18 13:10:34,030] 9. Black Boxes
+[2023-09-18 13:10:34,030] --------------
+[2023-09-18 13:10:34,030] 
+[2023-09-18 13:10:34,030] +----------+------+
+[2023-09-18 13:10:34,030] | Ref Name | Used |
+[2023-09-18 13:10:34,030] +----------+------+
+[2023-09-18 13:10:34,031] 
+[2023-09-18 13:10:34,031] 
+[2023-09-18 13:10:34,031] 10. Instantiated Netlists
+[2023-09-18 13:10:34,031] -------------------------
+[2023-09-18 13:10:34,031] 
+[2023-09-18 13:10:34,031] +----------+------+
+[2023-09-18 13:10:34,031] | Ref Name | Used |
+[2023-09-18 13:10:34,031] +----------+------+
+[2023-09-18 13:10:34,031] 
+[2023-09-18 13:10:34,031] 
+[2023-09-18 13:10:34,031] # report_timing
+[2023-09-18 13:10:34,031] INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: max.
+[2023-09-18 13:10:34,031] INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+[2023-09-18 13:10:34,031] WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+[2023-09-18 13:10:34,031] Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+[2023-09-18 13:10:34,031] INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+[2023-09-18 13:10:34,031] Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+[2023-09-18 13:10:34,031] ------------------------------------------------------------------------------------
+[2023-09-18 13:10:34,031] | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+[2023-09-18 13:10:34,031] | Date         : Mon Sep 18 13:10:33 2023
+[2023-09-18 13:10:34,031] | Host         : finn_dev_jokar running 64-bit Ubuntu 18.04.6 LTS
+[2023-09-18 13:10:34,031] | Command      : report_timing
+[2023-09-18 13:10:34,031] | Design       : finn_design_wrapper
+[2023-09-18 13:10:34,031] | Device       : 7a200t-fbg484
+[2023-09-18 13:10:34,031] | Speed File   : -3  PRODUCTION 1.23 2018-06-13
+[2023-09-18 13:10:34,031] ------------------------------------------------------------------------------------
+[2023-09-18 13:10:34,031] 
+[2023-09-18 13:10:34,031] Timing Report
+[2023-09-18 13:10:34,031] 
+[2023-09-18 13:10:34,031] Slack (MET) :             4.173ns  (required time - arrival time)
+[2023-09-18 13:10:34,031]   Source:                 finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/nf_2_fu_204_reg[6]/C
+[2023-09-18 13:10:34,031]                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+[2023-09-18 13:10:34,031]   Destination:            finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/nf_2_fu_204_reg[10]/R
+[2023-09-18 13:10:34,031]                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+[2023-09-18 13:10:34,031]   Path Group:             ap_clk
+[2023-09-18 13:10:34,031]   Path Type:              Setup (Max at Slow Process Corner)
+[2023-09-18 13:10:34,031]   Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+[2023-09-18 13:10:34,031]   Data Path Delay:        5.442ns  (logic 0.923ns (16.959%)  route 4.519ns (83.041%))
+[2023-09-18 13:10:34,031]   Logic Levels:           6  (LUT3=1 LUT5=2 LUT6=3)
+[2023-09-18 13:10:34,031]   Clock Path Skew:        -0.035ns (DCD - SCD + CPR)
+[2023-09-18 13:10:34,031]     Destination Clock Delay (DCD):    0.669ns = ( 10.669 - 10.000 )
+[2023-09-18 13:10:34,031]     Source Clock Delay      (SCD):    0.704ns
+[2023-09-18 13:10:34,031]     Clock Pessimism Removal (CPR):    0.000ns
+[2023-09-18 13:10:34,031]   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+[2023-09-18 13:10:34,031]     Total System Jitter     (TSJ):    0.071ns
+[2023-09-18 13:10:34,031]     Total Input Jitter      (TIJ):    0.000ns
+[2023-09-18 13:10:34,031]     Discrete Jitter          (DJ):    0.000ns
+[2023-09-18 13:10:34,031]     Phase Error              (PE):    0.000ns
+[2023-09-18 13:10:34,031] 
+[2023-09-18 13:10:34,031]     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+[2023-09-18 13:10:34,031]   -------------------------------------------------------------------    -------------------
+[2023-09-18 13:10:34,031]                          (clock ap_clk rise edge)     0.000     0.000 r
+[2023-09-18 13:10:34,031]                                                       0.000     0.000 r  ap_clk (IN)
+[2023-09-18 13:10:34,031]                          net (fo=1002, unset)         0.704     0.704    finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/ap_clk
+[2023-09-18 13:10:34,031]     SLICE_X21Y121        FDRE                                         r  finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/nf_2_fu_204_reg[6]/C
+[2023-09-18 13:10:34,031]   -------------------------------------------------------------------    -------------------
+[2023-09-18 13:10:34,031]     SLICE_X21Y121        FDRE (Prop_fdre_C_Q)         0.341     1.045 f  finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/nf_2_fu_204_reg[6]/Q
+[2023-09-18 13:10:34,031]                          net (fo=2, routed)           0.616     1.661    finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/nf_2_fu_204_reg[6]
+[2023-09-18 13:10:34,031]     SLICE_X20Y121        LUT6 (Prop_lut6_I2_O)        0.097     1.758 r  finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/i___62_carry_i_13/O
+[2023-09-18 13:10:34,032]                          net (fo=1, routed)           0.315     2.073    finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/i___62_carry_i_13_n_1
+[2023-09-18 13:10:34,032]     SLICE_X20Y121        LUT6 (Prop_lut6_I0_O)        0.097     2.170 r  finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/i___62_carry_i_11/O
+[2023-09-18 13:10:34,032]                          net (fo=1, routed)           0.398     2.568    finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/i___62_carry_i_11_n_1
+[2023-09-18 13:10:34,032]     SLICE_X20Y124        LUT5 (Prop_lut5_I4_O)        0.097     2.665 r  finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/i___62_carry_i_6/O
+[2023-09-18 13:10:34,032]                          net (fo=35, routed)          0.979     3.645    finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/icmp_ln252_fu_267_p2__82
+[2023-09-18 13:10:34,032]     SLICE_X38Y125        LUT6 (Prop_lut6_I4_O)        0.097     3.742 r  finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/ap_CS_fsm[2]_i_2__14/O
+[2023-09-18 13:10:34,032]                          net (fo=12, routed)          0.378     4.119    finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/ap_block_pp0_stage0_subdone
+[2023-09-18 13:10:34,032]     SLICE_X37Y124        LUT5 (Prop_lut5_I3_O)        0.097     4.216 f  finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/nf_2_fu_204[0]_i_2/O
+[2023-09-18 13:10:34,032]                          net (fo=34, routed)          1.161     5.377    finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/nf_2_fu_2040
+[2023-09-18 13:10:34,032]     SLICE_X22Y127        LUT3 (Prop_lut3_I2_O)        0.097     5.474 r  finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/nf_2_fu_204[0]_i_1/O
+[2023-09-18 13:10:34,032]                          net (fo=32, routed)          0.673     6.146    finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/nf_2_fu_204
+[2023-09-18 13:10:34,032]     SLICE_X21Y122        FDRE                                         r  finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/nf_2_fu_204_reg[10]/R
+[2023-09-18 13:10:34,032]   -------------------------------------------------------------------    -------------------
+[2023-09-18 13:10:34,032] 
+[2023-09-18 13:10:34,032]                          (clock ap_clk rise edge)    10.000    10.000 r
+[2023-09-18 13:10:34,032]                                                       0.000    10.000 r  ap_clk (IN)
+[2023-09-18 13:10:34,032]                          net (fo=1002, unset)         0.669    10.669    finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/ap_clk
+[2023-09-18 13:10:34,032]     SLICE_X21Y122        FDRE                                         r  finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/nf_2_fu_204_reg[10]/C
+[2023-09-18 13:10:34,032]                          clock pessimism              0.000    10.669
+[2023-09-18 13:10:34,032]                          clock uncertainty           -0.035    10.633
+[2023-09-18 13:10:34,032]     SLICE_X21Y122        FDRE (Setup_fdre_C_R)       -0.314    10.319    finn_design_i/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/inst/grp_Matrix_Vector_Activa_fu_28/nf_2_fu_204_reg[10]
+[2023-09-18 13:10:34,032]   -------------------------------------------------------------------
+[2023-09-18 13:10:34,032]                          required time                         10.319
+[2023-09-18 13:10:34,032]                          arrival time                          -6.146
+[2023-09-18 13:10:34,032]   -------------------------------------------------------------------
+[2023-09-18 13:10:34,032]                          slack                                  4.173
+[2023-09-18 13:10:34,032] 
+[2023-09-18 13:10:34,032] 
+[2023-09-18 13:10:34,032] 
+[2023-09-18 13:10:34,032] 
+[2023-09-18 13:10:34,032] # report_power
+[2023-09-18 13:10:34,032] Command: report_power
+[2023-09-18 13:10:34,032] Running Vector-less Activity Propagation...
+[2023-09-18 13:10:34,032] 
+[2023-09-18 13:10:34,032] Finished Running Vector-less Activity Propagation
+[2023-09-18 13:10:34,032] Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+[2023-09-18 13:10:34,032] ----------------------------------------------------------------------------------------
+[2023-09-18 13:10:34,032] | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+[2023-09-18 13:10:34,032] | Date             : Mon Sep 18 13:10:33 2023
+[2023-09-18 13:10:34,032] | Host             : finn_dev_jokar running 64-bit Ubuntu 18.04.6 LTS
+[2023-09-18 13:10:34,032] | Command          : report_power
+[2023-09-18 13:10:34,032] | Design           : finn_design_wrapper
+[2023-09-18 13:10:34,032] | Device           : xc7a200tfbg484-3
+[2023-09-18 13:10:34,032] | Design State     : routed
+[2023-09-18 13:10:34,032] | Grade            : extended
+[2023-09-18 13:10:34,032] | Process          : typical
+[2023-09-18 13:10:34,032] | Characterization : Production
+[2023-09-18 13:10:34,032] ----------------------------------------------------------------------------------------
+[2023-09-18 13:10:34,032] 
+[2023-09-18 13:10:34,032] Power Report
+[2023-09-18 13:10:34,032] 
+[2023-09-18 13:10:34,032] Table of Contents
+[2023-09-18 13:10:34,032] -----------------
+[2023-09-18 13:10:34,032] 1. Summary
+[2023-09-18 13:10:34,032] 1.1 On-Chip Components
+[2023-09-18 13:10:34,032] 1.2 Power Supply Summary
+[2023-09-18 13:10:34,032] 1.3 Confidence Level
+[2023-09-18 13:10:34,032] 2. Settings
+[2023-09-18 13:10:34,032] 2.1 Environment
+[2023-09-18 13:10:34,033] 2.2 Clock Constraints
+[2023-09-18 13:10:34,033] 3. Detailed Reports
+[2023-09-18 13:10:34,033] 3.1 By Hierarchy
+[2023-09-18 13:10:34,033] 
+[2023-09-18 13:10:34,033] 1. Summary
+[2023-09-18 13:10:34,033] ----------
+[2023-09-18 13:10:34,033] 
+[2023-09-18 13:10:34,033] +--------------------------+--------------+
+[2023-09-18 13:10:34,033] | Total On-Chip Power (W)  | 0.132        |
+[2023-09-18 13:10:34,033] | Design Power Budget (W)  | Unspecified* |
+[2023-09-18 13:10:34,033] | Power Budget Margin (W)  | NA           |
+[2023-09-18 13:10:34,033] | Dynamic (W)              | 0.010        |
+[2023-09-18 13:10:34,033] | Device Static (W)        | 0.122        |
+[2023-09-18 13:10:34,033] | Effective TJA (C/W)      | 2.5          |
+[2023-09-18 13:10:34,033] | Max Ambient (C)          | 99.7         |
+[2023-09-18 13:10:34,033] | Junction Temperature (C) | 25.3         |
+[2023-09-18 13:10:34,033] | Confidence Level         | Medium       |
+[2023-09-18 13:10:34,033] | Setting File             | ---          |
+[2023-09-18 13:10:34,033] | Simulation Activity File | ---          |
+[2023-09-18 13:10:34,033] | Design Nets Matched      | NA           |
+[2023-09-18 13:10:34,033] +--------------------------+--------------+
+[2023-09-18 13:10:34,033] * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+[2023-09-18 13:10:34,033] 
+[2023-09-18 13:10:34,033] 
+[2023-09-18 13:10:34,033] 1.1 On-Chip Components
+[2023-09-18 13:10:34,033] ----------------------
+[2023-09-18 13:10:34,033] 
+[2023-09-18 13:10:34,033] +----------------+-----------+----------+-----------+-----------------+
+[2023-09-18 13:10:34,033] | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
+[2023-09-18 13:10:34,033] +----------------+-----------+----------+-----------+-----------------+
+[2023-09-18 13:10:34,033] | Clocks         |     0.006 |        3 |       --- |             --- |
+[2023-09-18 13:10:34,033] | Slice Logic    |     0.002 |     2126 |       --- |             --- |
+[2023-09-18 13:10:34,033] |   LUT as Logic |     0.002 |      848 |    133800 |            0.63 |
+[2023-09-18 13:10:34,033] |   CARRY4       |    <0.001 |      199 |     33450 |            0.59 |
+[2023-09-18 13:10:34,033] |   Register     |    <0.001 |     1003 |    267600 |            0.37 |
+[2023-09-18 13:10:34,033] |   Others       |     0.000 |       61 |       --- |             --- |
+[2023-09-18 13:10:34,033] | Signals        |     0.002 |     1750 |       --- |             --- |
+[2023-09-18 13:10:34,033] | Static Power   |     0.122 |          |           |                 |
+[2023-09-18 13:10:34,033] | Total          |     0.132 |          |           |                 |
+[2023-09-18 13:10:34,033] +----------------+-----------+----------+-----------+-----------------+
+[2023-09-18 13:10:34,033] 
+[2023-09-18 13:10:34,033] 
+[2023-09-18 13:10:34,033] 1.2 Power Supply Summary
+[2023-09-18 13:10:34,033] ------------------------
+[2023-09-18 13:10:34,033] 
+[2023-09-18 13:10:34,033] +-----------+-------------+-----------+-------------+------------+
+[2023-09-18 13:10:34,033] | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
+[2023-09-18 13:10:34,033] +-----------+-------------+-----------+-------------+------------+
+[2023-09-18 13:10:34,033] | Vccint    |       1.000 |     0.041 |       0.010 |      0.030 |
+[2023-09-18 13:10:34,033] | Vccaux    |       1.800 |     0.031 |       0.000 |      0.031 |
+[2023-09-18 13:10:34,033] | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+[2023-09-18 13:10:34,033] | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+[2023-09-18 13:10:34,033] | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+[2023-09-18 13:10:34,033] | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+[2023-09-18 13:10:34,033] | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+[2023-09-18 13:10:34,033] | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+[2023-09-18 13:10:34,033] | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+[2023-09-18 13:10:34,033] | Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
+[2023-09-18 13:10:34,033] | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+[2023-09-18 13:10:34,034] | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+[2023-09-18 13:10:34,034] | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
+[2023-09-18 13:10:34,034] +-----------+-------------+-----------+-------------+------------+
+[2023-09-18 13:10:34,034] 
+[2023-09-18 13:10:34,034] 
+[2023-09-18 13:10:34,034] 1.3 Confidence Level
+[2023-09-18 13:10:34,034] --------------------
+[2023-09-18 13:10:34,034] 
+[2023-09-18 13:10:34,034] +-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+[2023-09-18 13:10:34,034] | User Input Data             | Confidence | Details                                        | Action                                                                                                     |
+[2023-09-18 13:10:34,034] +-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+[2023-09-18 13:10:34,034] | Design implementation state | High       | Design is routed                               |                                                                                                            |
+[2023-09-18 13:10:34,034] | Clock nodes activity        | High       | User specified more than 95% of clocks         |                                                                                                            |
+[2023-09-18 13:10:34,034] | I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                            |
+[2023-09-18 13:10:34,034] | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+[2023-09-18 13:10:34,034] | Device models               | High       | Device models are Production                   |                                                                                                            |
+[2023-09-18 13:10:34,034] |                             |            |                                                |                                                                                                            |
+[2023-09-18 13:10:34,034] | Overall confidence level    | Medium     |                                                |                                                                                                            |
+[2023-09-18 13:10:34,034] +-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+[2023-09-18 13:10:34,034] 
+[2023-09-18 13:10:34,034] 
+[2023-09-18 13:10:34,034] 2. Settings
+[2023-09-18 13:10:34,034] -----------
+[2023-09-18 13:10:34,034] 
+[2023-09-18 13:10:34,034] 2.1 Environment
+[2023-09-18 13:10:34,034] ---------------
+[2023-09-18 13:10:34,034] 
+[2023-09-18 13:10:34,034] +-----------------------+--------------------------+
+[2023-09-18 13:10:34,034] | Ambient Temp (C)      | 25.0                     |
+[2023-09-18 13:10:34,034] | ThetaJA (C/W)         | 2.5                      |
+[2023-09-18 13:10:34,034] | Airflow (LFM)         | 250                      |
+[2023-09-18 13:10:34,034] | Heat Sink             | medium (Medium Profile)  |
+[2023-09-18 13:10:34,034] | ThetaSA (C/W)         | 4.2                      |
+[2023-09-18 13:10:34,034] | Board Selection       | medium (10"x10")         |
+[2023-09-18 13:10:34,034] | # of Board Layers     | 12to15 (12 to 15 Layers) |
+[2023-09-18 13:10:34,034] | Board Temperature (C) | 25.0                     |
+[2023-09-18 13:10:34,034] +-----------------------+--------------------------+
+[2023-09-18 13:10:34,034] 
+[2023-09-18 13:10:34,034] 
+[2023-09-18 13:10:34,034] 2.2 Clock Constraints
+[2023-09-18 13:10:34,034] ---------------------
+[2023-09-18 13:10:34,034] 
+[2023-09-18 13:10:34,034] +--------+--------+-----------------+
+[2023-09-18 13:10:34,034] | Clock  | Domain | Constraint (ns) |
+[2023-09-18 13:10:34,034] +--------+--------+-----------------+
+[2023-09-18 13:10:34,034] | ap_clk | ap_clk |            10.0 |
+[2023-09-18 13:10:34,034] +--------+--------+-----------------+
+[2023-09-18 13:10:34,034] 
+[2023-09-18 13:10:34,034] 
+[2023-09-18 13:10:34,034] 3. Detailed Reports
+[2023-09-18 13:10:34,034] -------------------
+[2023-09-18 13:10:34,035] 
+[2023-09-18 13:10:34,035] 3.1 By Hierarchy
+[2023-09-18 13:10:34,035] ----------------
+[2023-09-18 13:10:34,035] 
+[2023-09-18 13:10:34,035] +-----------------------------------+-----------+
+[2023-09-18 13:10:34,035] | Name                              | Power (W) |
+[2023-09-18 13:10:34,035] +-----------------------------------+-----------+
+[2023-09-18 13:10:34,035] | finn_design_wrapper               |     0.010 |
+[2023-09-18 13:10:34,035] |   finn_design_i                   |     0.010 |
+[2023-09-18 13:10:34,035] |     ConvolutionInputGenerator1D_0 |     0.001 |
+[2023-09-18 13:10:34,035] |       inst                        |     0.001 |
+[2023-09-18 13:10:34,035] |     ConvolutionInputGenerator1D_1 |     0.001 |
+[2023-09-18 13:10:34,035] |       inst                        |     0.001 |
+[2023-09-18 13:10:34,035] |     ConvolutionInputGenerator1D_2 |     0.001 |
+[2023-09-18 13:10:34,035] |       inst                        |     0.001 |
+[2023-09-18 13:10:34,035] |     ConvolutionInputGenerator1D_3 |     0.001 |
+[2023-09-18 13:10:34,035] |       inst                        |     0.001 |
+[2023-09-18 13:10:34,035] |     StreamingFCLayer_Batch_2      |     0.001 |
+[2023-09-18 13:10:34,035] |       StreamingFCLayer_Batch_2    |     0.001 |
+[2023-09-18 13:10:34,035] |     StreamingFCLayer_Batch_3      |     0.002 |
+[2023-09-18 13:10:34,035] |       StreamingFCLayer_Batch_3    |     0.002 |
+[2023-09-18 13:10:34,035] +-----------------------------------+-----------+
+[2023-09-18 13:10:34,035] 
+[2023-09-18 13:10:34,035] 
+[2023-09-18 13:10:34,035] 0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+[2023-09-18 13:10:34,035] report_power completed successfully
+[2023-09-18 13:10:34,035] # set util [report_utilization -return_string]
+[2023-09-18 13:10:34,035] # set util_lut [exec echo $util | grep LUT | head -n 1 | cut -d| -f3 | tr -d " "]
+[2023-09-18 13:10:34,035] # set util_ff [llength [get_cells -hier -filter {PRIMITIVE_TYPE =~ *.F*E*}]]
+[2023-09-18 13:10:34,035] WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_GROUP == DSP}'.
+[2023-09-18 13:10:34,035] # set util_dsp [llength [get_cells -hier -filter {PRIMITIVE_GROUP == DSP}]]
+[2023-09-18 13:10:34,035] WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_TYPE =~ *BRAM*}'.
+[2023-09-18 13:10:34,035] # set util_bram [llength [get_cells -hier -filter {PRIMITIVE_TYPE =~ *BRAM*}]]
+[2023-09-18 13:10:34,035] # set time_wns [get_property SLACK [get_timing_paths]]
+[2023-09-18 13:10:34,035] # puts "LUT: $util_lut FF: $util_ff DSP: $util_dsp BRAM: $util_bram"
+[2023-09-18 13:10:34,035] LUT: 848 FF: 1003 DSP: 0 BRAM: 0
+[2023-09-18 13:10:34,035] # set fp [open res.txt w]
+[2023-09-18 13:10:34,035] # puts $fp "LUT=$util_lut"
+[2023-09-18 13:10:34,035] # puts $fp "FF=$util_ff"
+[2023-09-18 13:10:34,035] # puts $fp "DSP=$util_dsp"
+[2023-09-18 13:10:34,035] # puts $fp "BRAM=$util_bram"
+[2023-09-18 13:10:34,035] # puts $fp "WNS=$time_wns"
+[2023-09-18 13:10:34,035] # close $fp
+[2023-09-18 13:10:34,035] # exit
+[2023-09-18 13:10:34,035] INFO: [Common 17-206] Exiting Vivado at Mon Sep 18 13:10:33 2023...
+[2023-09-18 13:10:34,035] /workspace/oh-my-xilinx/vivadoprojgen.sh:30: no matches found: ../*.vhd
+[2023-09-18 13:10:34,035] /workspace/oh-my-xilinx/vivadoprojgen.sh:32: no matches found: ../*.h
+[2023-09-18 13:10:34,035] /workspace/oh-my-xilinx/vivadoprojgen.sh:33: no matches found: ../*.xdc
+[2023-09-18 13:10:34,035] /workspace/oh-my-xilinx/vivadoprojgen.sh:34: no matches found: ../*.vh
+[2023-09-18 13:10:34,035] cat: finn_design_wrapper.xdc: input file is output file
+[2023-09-18 13:10:34,036] ['LUT', '848']
+[2023-09-18 13:10:34,036] ['FF', '1003']
+[2023-09-18 13:10:34,036] ['DSP', '0']
+[2023-09-18 13:10:34,036] ['BRAM', '0']
+[2023-09-18 13:10:34,036] ['WNS', '4.173']
+[2023-09-18 13:10:34,036] ['']
+[2023-09-18 13:10:34,039] Running step: step_synthesize_bitfile [15/17]
+[2023-09-18 13:10:34,040] Running step: step_make_pynq_driver [16/17]
+[2023-09-18 13:10:34,041] Running step: step_deployment_package [17/17]
