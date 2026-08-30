@@ -84,9 +84,7 @@ Sample predictions (`stereo1d.infer`), Input Left / Predicted Disparity / Ground
 
 Running inference over a contiguous sequence of test-range frames:
 
-[![Inference demo](docs/videos/preview_frame.png)](docs/videos/inference_demo.mp4)
-
-**[Watch the inference demo video](docs/videos/inference_demo.mp4)**
+https://github.com/user-attachments/assets/dbb6b661-3c91-4c17-99b2-70ba02b615a5
 
 ## The Motivation and Novelty Behind Disp1DNet
 
