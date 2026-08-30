@@ -82,6 +82,12 @@ Sample predictions (`stereo1d.infer`), Input Left / Predicted Disparity / Ground
 
 ![Sample prediction](docs/images/prediction_0250.png)
 
+Running inference over a contiguous sequence of test-range frames:
+
+[![Inference demo](docs/videos/preview_frame.png)](docs/videos/inference_demo.mp4)
+
+**[Watch the inference demo video](docs/videos/inference_demo.mp4)**
+
 ## The Motivation and Novelty Behind Disp1DNet
 
 My starting point was an FPGA deployment target for stereo vision, and the field's

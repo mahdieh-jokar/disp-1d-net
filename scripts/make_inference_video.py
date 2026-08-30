@@ -2,8 +2,7 @@
 test-range frames, one 3-panel (Input Left / Predicted Disparity / Ground Truth) frame
 per stereo pair, plus a fixed title and a small author label in a footer band.
 
-This is a standalone review artifact. It is not referenced from README.md or any file
-under docs/ yet; it only gets linked in once it's been reviewed and approved.
+Output is linked from the root README.md's Results section.
 
 Usage:
     # one preview frame first, to check title/color/label placement
@@ -74,7 +73,7 @@ def load_label_image(path: str) -> np.ndarray:
 def render_frame(left_color, predicted, gt, label_image):
     """One video frame: 3 panels on top, a title, and a centered author label footer."""
     fig, axes = plt.subplots(1, 3, figsize=(13, 5.2), facecolor=COLOR_SURFACE, dpi=120)
-    fig.subplots_adjust(top=0.80, bottom=0.20, wspace=0.06)
+    fig.subplots_adjust(top=0.84, bottom=0.13, left=0.0185, right=0.9815, wspace=0.06)
 
     panels = (
         ("Input Left", left_color, None),
@@ -84,19 +83,22 @@ def render_frame(left_color, predicted, gt, label_image):
     for ax, (panel_title, image, cmap) in zip(axes, panels):
         ax.set_facecolor(COLOR_SURFACE)
         ax.imshow(image, cmap=cmap, vmin=0, vmax=1)
-        ax.set_title(panel_title, color=COLOR_INK_PRIMARY, fontsize=11)
+        ax.set_title(panel_title, color=COLOR_INK_PRIMARY, fontsize=12.5)
         ax.set_xticks([])
         ax.set_yticks([])
 
-    fig.suptitle(TITLE, color=TITLE_COLOR, fontsize=15, fontweight="bold", y=0.94)
+    fig.suptitle(
+        TITLE, color=TITLE_COLOR, fontsize=24, fontweight="bold",
+        family="Arial", y=0.975,
+    )
 
     if label_image is not None:
         fig_w, fig_h = fig.get_size_inches()
-        label_h_frac = 0.14
+        label_h_frac = 0.115
         img_h, img_w = label_image.shape[:2]
         label_w_frac = label_h_frac * (img_w / img_h) * (fig_h / fig_w)
         label_ax = fig.add_axes(
-            [0.5 - label_w_frac / 2, 0.02, label_w_frac, label_h_frac]
+            [0.5 - label_w_frac / 2, 0.01, label_w_frac, label_h_frac]
         )
         label_ax.set_facecolor(COLOR_SURFACE)
         label_ax.imshow(label_image)
