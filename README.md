@@ -87,6 +87,7 @@ Running inference over a contiguous sequence of test-range frames:
 https://github.com/user-attachments/assets/dbb6b661-3c91-4c17-99b2-70ba02b615a5
 
 ## The Motivation and Novelty Behind Disp1DNet
+![Stereo matching, one row at a time](docs/images/idea_diagram.png)
 
 My starting point was an FPGA deployment target for stereo vision, and the field's
 existing state-of-the-art models made that hard. They were accurate, but almost all of
