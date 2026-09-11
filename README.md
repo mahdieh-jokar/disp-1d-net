@@ -8,6 +8,9 @@ the numbers behind both.
 **Published:** M. Jokar, "Disp1DNet: Rapid 1D Stereo Network for Efficient Disparity
 Map Estimation," IEEE. [ieeexplore.ieee.org/document/10887522](https://ieeexplore.ieee.org/document/10887522/)
 
+**Technical walkthrough (Medium article):**  
+[How I Got 557 FPS Stereo Depth Running on a $300 FPGA](https://medium.com/@mjokar7676/how-i-got-557-fps-stereo-depth-running-on-a-300-fpga-3472bc59a4e)
+
 Disp1DNet is a 1D-CNN stereo disparity model, trained end-to-end in PyTorch, quantized
 with [Brevitas](https://github.com/Xilinx/brevitas), and synthesized to a Xilinx FPGA
 with [FINN](https://github.com/Xilinx/finn). It runs on CPU, GPU, and FPGA with
